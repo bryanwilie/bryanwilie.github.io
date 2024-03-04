@@ -206,6 +206,8 @@ kramdown:
 include: ["_pages"]
 exclude:
   - bin
+  - blog.md
+  - cv.md
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - docker-compose.yml

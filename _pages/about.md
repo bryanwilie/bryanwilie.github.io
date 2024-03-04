@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://hkust.edu.hk/'>The Hong Kong University of Science and Technology</a>
 

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://hkust.edu.hk/'>The Hong Kong University of Science and Technology</a>. Hong Kong. bwilie@ust.hk.
+subtitle: <a href='https://hkust.edu.hk/'>The Hong Kong University of Science and Technology</a>
 
 profile:
   align: right
@@ -22,7 +22,7 @@ social: true # includes social icons at the bottom of the page
 
 I am a PhD Candidate in [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) and I am co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received the bachelor degree in Electronic Engineering from Bandung Institute of Technology in 2014.
 
-# Research
+## Research
 
 I am generally interested in natural language processing and machine learning, specifically in:
 - reasoning
@@ -30,9 +30,9 @@ I am generally interested in natural language processing and machine learning, s
 - conversational Al
 - low-resource languages
 
-# Service
+## Service
 
-Area Chair at ACL24, NAACL24
+Area Chair at ACL24, NAACL24<br>
 Reviewer at AACL, ACL, EMNLP, EACL
 
 

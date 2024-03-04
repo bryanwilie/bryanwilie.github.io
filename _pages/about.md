@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-I am a PhD Candidate in [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) and I am co-advised by [Pascale Fung](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=pascale-fung-pascale) and [Junxian He](https://jxhe.github.io/). Before that, I received the bachelor degree in Electronic Engineering from Bandung Institute of Technology in 2014.
+I am a PhD Candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) and I am co-advised by [Pascale Fung](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=pascale-fung-pascale) and [Junxian He](https://jxhe.github.io/). Before that, I received the bachelor degree in Electronic Engineering from Bandung Institute of Technology in 2014.
 
 ## Research
 

@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Centre for Artificial Intelligence Research (CAiRE)</p>
-    <p>The Hong Kong University of Science and Technology</p>
-    <p>Clearwater Bay, Hong Kong</p>
+    <p style="font-size:10px;">Centre for Artificial Intelligence Research (CAiRE)</p>
+    <p style="font-size:10px;">The Hong Kong University of Science and Technology</p>
+    <p style="font-size:10px;">Clearwater Bay, Hong Kong</p>
 
 news: false # includes a list of news items
 latest_posts: false # includes a list of the newest posts

@@ -25,10 +25,10 @@ I am a PhD Candidate in [The Hong Kong University of Science and Technology](htt
 ## Research
 
 I am generally interested in natural language processing and machine learning, specifically in:
-- reasoning
-- knowledge-intensive NLP
-- conversational Al
-- low-resource languages
+- Reasoning
+- Knowledge-intensive NLP
+- Conversational Al
+- Low-resource languages
 
 ## Service
 

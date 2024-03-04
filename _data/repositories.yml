@@ -1,8 +1,11 @@
 github_users:
   - bryanwilie
+  - HLTCHKUST
+  - IndoNLP
 
 github_repos:
   - bryanwilie/pick
+  - HLTCHKUST/chatgpt-evaluation
   - IndoNLP/indonlu
   - IndoNLP/indonlg
   - IndoNLP/nusa-crowd

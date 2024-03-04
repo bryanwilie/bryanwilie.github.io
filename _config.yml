@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Bryan
+middle_name: 
+last_name: Wilie
+email: bwilie@ust.hk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -67,16 +67,16 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: bryanwilie # your GitHub user name
 gitlab_username: # your GitLab user name
-x_username: # your X handle
+x_username: bryanwilie92 # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: bryanwilie # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
+scholar_userid: 0pnaXO8AAAAJ&hl # your Google Scholar ID
+semanticscholar_id: 150048491 # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
+orcid_id: 0000-0001-6750-4236 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -97,14 +97,14 @@ spotify_id: # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: # your instagram id
-facebook_id: # your facebook id
+facebook_id: bryanwilie # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+# contact_note: >
+  # You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

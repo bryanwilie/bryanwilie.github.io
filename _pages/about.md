@@ -6,7 +6,7 @@ subtitle: PhD Candidate at The Hong Kong University of Science and Technology
 
 profile:
   align: right
-  image: <img src="/path/to/prof_pic.jpg" alt="Profile Picture" width="100" height="auto">
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
 <!--   more_info: >
     <p style="font-size:16px;" align="right">Centre for Artificial Intelligence Research (CAiRE)</p>

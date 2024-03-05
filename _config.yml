@@ -128,7 +128,7 @@ blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
 # Pagination
-pagination:
+pagination: 
   enabled: true
 
 related_blog_posts:

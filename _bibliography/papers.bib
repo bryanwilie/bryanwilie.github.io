@@ -1,26 +1,35 @@
 ---
 ---
 
-@inproceedings{wilie2024belief,
+@article{wilie2024belief,
     title="Belief Revision: The Adaptability of Large Language Models Reasoning",
     author="Wilie, Bryan and Cahyawijaya, Samuel and Ishii, Etsuko and He, Junxian and Fung, Pascale",
     journal="arXiv preprint arXiv:2406.19764",
     selected={true},
+    month = nov,
     year="2024",
+    url = "https://arxiv.org/pdf/2406.19764",
+    abstract = "The capability to reason from text is crucial for real-world NLP applications. Real-world scenarios often involve incomplete or evolving data. In response, individuals update their beliefs and understandings accordingly. However, most existing evaluations assume that language models (LMs) operate with consistent information. We introduce Belief-R, a new dataset designed to test LMs' belief revision ability when presented with new evidence. Inspired by how humans suppress prior inferences, this task assesses LMs within the newly proposed delta reasoning framework. Belief-R features sequences of premises designed to simulate scenarios where additional information could necessitate prior conclusions drawn by LMs. We evaluate 30 LMs across diverse prompting strategies and found that LMs generally struggle to appropriately revise their beliefs in response to new information. Further, models adept at updating often underperformed in scenarios without necessary updates, highlighting a critical trade-off. These insights underscore the importance of improving LMs' adaptiveness to changing information, a step toward more reliable AI systems.",
 }
 
-@inproceedings{ji2024llm,
+@inproceedings{jillm,
     title="LLM Internal States Reveal Hallucination Risk Faced With a Query",
     author="Ji, Ziwei and Chen, Delong and Ishii, Etsuko and Cahyawijaya, Samuel and Bang, Yejin and Wilie, Bryan and Fung, Pascale",
-    journal="arXiv preprint arXiv:2407.03282",
+    booktitle="The 7th BlackboxNLP Workshop",
+    month = nov,
     year="2024",
+    url = "https://openreview.net/pdf?id=vNoXjWNh2G",
+    abstract = "The hallucination problem of Large Language Models (LLMs) significantly limits their reliability and trustworthiness. Humans have a self-awareness process that allows us to recognize what we don't know when faced with queries. Inspired by this, our paper investigates whether LLMs can estimate their own hallucination risk before response generation. We analyze the internal mechanisms of LLMs broadly both in terms of training data sources and across 15 diverse Natural Language Generation (NLG) tasks, spanning over 700 datasets. Our empirical analysis reveals two key insights: (1) LLM internal states indicate whether they have seen the query in training data or not; and (2) LLM internal states show they are likely to hallucinate or not regarding the query. Our study explores particular neurons, activation layers, and tokens that play a crucial role in the LLM perception of uncertainty and hallucination risk. By a probing estimator, we leverage LLM self-assessment, achieving an average hallucination estimation accuracy of 84.32\% at run time.",
 }
 
-@inproceedings{winata2024worldcuisines,
+@article{winata2024worldcuisines,
     title="WORLDCUISINES: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines",
     author="Winata, Genta Indra and Hudi, Frederikus and Irawan, Patrick Amadeus and Anugraha, David and Putri, Rifki Afina and Wang, Yutong and Nohejl, Adam and Prathama, Ubaidillah Ariq and Ousidhoum, Nedjma and Amriani, Afifa and others",
     journal="arXiv preprint arXiv:2410.12705",
+    month = oct,
     year="2024",
+    url = "https://arxiv.org/pdf/2410.12705",
+    abstract = "Vision Language Models (VLMs) often struggle with culture-specific knowledge, particularly in languages other than English and in underrepresented cultural contexts. To evaluate their understanding of such knowledge, we introduce WorldCuisines, a massive-scale benchmark for multilingual and multicultural, visually grounded language understanding. This benchmark includes a visual question answering (VQA) dataset with text-image pairs across 30 languages and dialects, spanning 9 language families and featuring over 1 million data points, making it the largest multicultural VQA benchmark to date. It includes tasks for identifying dish names and their origins. We provide evaluation datasets in two sizes (12k and 60k instances) alongside a training dataset (1 million instances). Our findings show that while VLMs perform better with correct location context, they struggle with adversarial contexts and predicting specific regional cuisines and languages. To support future research, we release a knowledge base with annotated food entries and images along with the VQA data.",
 }
 
 @inproceedings{cahyawijaya-etal-2024-cendol,

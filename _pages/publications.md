@@ -13,8 +13,7 @@ Full list of my publications can be found in [Google Scholar](https://scholar.go
 
 <div class="publications">
 
-{% bibliography --group_by none --query @*[selected=true]* --sort_by year,month --order descending %}
+{% bibliography %}
 
 </div>
 
-<!-- {% bibliography %} -->

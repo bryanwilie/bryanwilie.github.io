@@ -1,18 +1,40 @@
 ---
 ---
 
-@inproceedings{jillm,
-    title="LLM Internal States Reveal Hallucination Risk Faced With a Query",
-    author="Ji, Ziwei and Chen, Delong and Ishii, Etsuko and Cahyawijaya, Samuel and Bang, Yejin and Wilie, Bryan and Fung, Pascale",
-    booktitle="The 7th BlackboxNLP Workshop",
-    month = nov,
-    year="2024",
-    url = "https://openreview.net/pdf?id=vNoXjWNh2G",
-    abstract = "The hallucination problem of Large Language Models (LLMs) significantly limits their reliability and trustworthiness. Humans have a self-awareness process that allows us to recognize what we don't know when faced with queries. Inspired by this, our paper investigates whether LLMs can estimate their own hallucination risk before response generation. We analyze the internal mechanisms of LLMs broadly both in terms of training data sources and across 15 diverse Natural Language Generation (NLG) tasks, spanning over 700 datasets. Our empirical analysis reveals two key insights: (1) LLM internal states indicate whether they have seen the query in training data or not; and (2) LLM internal states show they are likely to hallucinate or not regarding the query. Our study explores particular neurons, activation layers, and tokens that play a crucial role in the LLM perception of uncertainty and hallucination risk. By a probing estimator, we leverage LLM self-assessment, achieving an average hallucination estimation accuracy of 84.32\% at run time.",
+@misc{wilie2024belief,
+    title={Belief Revision: The Adaptability of Large Language Models Reasoning},
+    author={Wilie, Bryan and Cahyawijaya, Samuel and Ishii, Etsuko and He, Junxian and Fung, Pascale},
+    journal={arXiv preprint arXiv:2406.19764},
+    selected={true},
+    month={nov},
+    year={2024},
+    url={https://arxiv.org/pdf/2406.19764},
+    abstract={The capability to reason from text is crucial for real-world NLP applications. Real-world scenarios often involve incomplete or evolving data. In response, individuals update their beliefs and understandings accordingly. However, most existing evaluations assume that language models (LMs) operate with consistent information. We introduce Belief-R, a new dataset designed to test LMs' belief revision ability when presented with new evidence. Inspired by how humans suppress prior inferences, this task assesses LMs within the newly proposed delta reasoning framework. Belief-R features sequences of premises designed to simulate scenarios where additional information could necessitate prior conclusions drawn by LMs. We evaluate 30 LMs across diverse prompting strategies and found that LMs generally struggle to appropriately revise their beliefs in response to new information. Further, models adept at updating often underperformed in scenarios without necessary updates, highlighting a critical trade-off. These insights underscore the importance of improving LMs' adaptiveness to changing information, a step toward more reliable AI systems.}
+}
+
+
+@inproceedings{ji-etal-2024-llm,
+    title={LLM Internal States Reveal Hallucination Risk Faced With a Query},
+    author={Ji, Ziwei and Chen, Delong and Ishii, Etsuko and Cahyawijaya, Samuel and Bang, Yejin and Wilie, Bryan and Fung, Pascale},
+    booktitle={The 7th BlackboxNLP Workshop},
+    month={nov},
+    year={2024},
+    url={https://openreview.net/pdf?id=vNoXjWNh2G},
+    abstract={The hallucination problem of Large Language Models (LLMs) significantly limits their reliability and trustworthiness. Humans have a self-awareness process that allows us to recognize what we don't know when faced with queries. Inspired by this, our paper investigates whether LLMs can estimate their own hallucination risk before response generation. We analyze the internal mechanisms of LLMs broadly both in terms of training data sources and across 15 diverse Natural Language Generation (NLG) tasks, spanning over 700 datasets. Our empirical analysis reveals two key insights: (1) LLM internal states indicate whether they have seen the query in training data or not; and (2) LLM internal states show they are likely to hallucinate or not regarding the query. Our study explores particular neurons, activation layers, and tokens that play a crucial role in the LLM perception of uncertainty and hallucination risk. By a probing estimator, we leverage LLM self-assessment, achieving an average hallucination estimation accuracy of 84.32\% at run time.}
+}
+
+@misc{winata-etal-2024-worldcuisines,
+    title={{WORLDCUISINES}: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines},
+    author={Winata, Genta Indra and Hudi, Frederikus and Irawan, Patrick Amadeus and Anugraha, David and Putri, Rifki Afina and Wang, Yutong and Nohejl, Adam and Prathama, Ubaidillah Ariq and Ousidhoum, Nedjma and Amriani, Afifa and Rzayev, Anar and Das, Anirban and Pramodya, Ashmari and Adila, Aulia and Wilie, Bryan and Mawalim, Candy Olivia and Cheng, Ching Lam and Abolade, Daud and Chersoni, Emmanuele and Santus, E. and Ikhwantri, Fariz and Kuwanto, Garry and Zhao, Hanyang and Wibowo, Haryo Akbarianto and Lovenia, Holy and Cruz, Jan Christian Blaise and Putra, Jan Wira Gotama and Myung, Junho and Susanto, Lucky and Machin, Maria Angelica Riera and Zhukova, Marina and Anugraha, Michael and Adilazuarda, Muhammad Farid and Santosa, Natasha and Limkonchotiwat, Peerat and Dabre, Raj and Audino, Rio Alexander and Cahyawijaya, Samuel and Zhang, Shi-Xiong and Salim, Stephanie Yulia and Zhou, Yi and Gui, Yinxuan and Adelani, David Ifeoluwa and Lee, En-Shiun Annie and Okada, Shogo and Purwarianti, Ayu and Aji, Alham Fikri and Watanabe, Taro and Wijaya, Derry Tanti and Oh, Alice and Ngo, Chong-Wah},
+    journal={arXiv preprint arXiv:2410.12705},
+    month={oct},
+    year={2024},
+    url={https://arxiv.org/pdf/2410.12705},
+    abstract={Vision Language Models (VLMs) often struggle with culture-specific knowledge, particularly in languages other than English and in underrepresented cultural contexts. To evaluate their understanding of such knowledge, we introduce WorldCuisines, a massive-scale benchmark for multilingual and multicultural, visually grounded language understanding. This benchmark includes a visual question answering (VQA) dataset with text-image pairs across 30 languages and dialects, spanning 9 language families and featuring over 1 million data points, making it the largest multicultural VQA benchmark to date. It includes tasks for identifying dish names and their origins. We provide evaluation datasets in two sizes (12k and 60k instances) alongside a training dataset (1 million instances). Our findings show that while VLMs perform better with correct location context, they struggle with adversarial contexts and predicting specific regional cuisines and languages. To support future research, we release a knowledge base with annotated food entries and images along with the VQA data.}
 }
 
 @inproceedings{cahyawijaya-etal-2024-cendol,
-    title = "Cendol: Open Instruction-tuned Generative Large Language Models for Indonesian Languages",
+    title = "Cendol: Open Instruction-tuned Generative Large Language Models for {I}ndonesian Languages",
     author = "Cahyawijaya, Samuel  and
       Lovenia, Holy  and
       Koto, Fajri  and
@@ -40,8 +62,7 @@
     url = "https://aclanthology.org/2024.acl-long.796",
     doi = "10.18653/v1/2024.acl-long.796",
     pages = "14899--14914",
-    abstract = "Large language models (LLMs) show remarkable human-like capability in various domains and languages. To bridge this quality gap, we introduce Cendol, a collection of Indonesian LLMs encompassing both decoder-only and encoder-decoder architectures across a range of model sizes. We highlight Cendol{'}s effectiveness across a diverse array of tasks, attaining {\textasciitilde}20{\%} improvement, and demonstrate its capability to generalize to unseen tasks and indigenous languages of Indonesia. Furthermore, Cendol models showcase improved human favorability despite their limitations in capturing indigenous knowledge and cultural values in Indonesia. In addition, we discuss the shortcomings of parameter-efficient tunings, such as LoRA, for language adaptation. Alternatively, we propose the usage of vocabulary adaptation to enhance efficiency. Lastly, we evaluate the safety of Cendol and showcase that safety in pre-training in one language such as English is transferable to low-resource languages, such as Indonesian, even without RLHF and safety fine-tuning.",
-}
+    abstract = {Large language models (LLMs) show remarkable human-like capability in various domains and languages. To bridge this quality gap, we introduce Cendol, a collection of Indonesian LLMs encompassing both decoder-only and encoder-decoder architectures across a range of model sizes. We highlight Cendol's effectiveness across a diverse array of tasks, attaining ~20\% improvement, and demonstrate its capability to generalize to unseen tasks and indigenous languages of Indonesia. Furthermore, Cendol models showcase improved human favorability despite their limitations in capturing indigenous knowledge and cultural values in Indonesia. In addition, we discuss the shortcomings of parameter-efficient tunings, such as LoRA, for language adaptation. Alternatively, we propose the usage of vocabulary adaptation to enhance efficiency. Lastly, we evaluate the safety of Cendol and showcase that safety in pre-training in one language such as English is transferable to low-resource languages, such as Indonesian, even without RLHF and safety fine-tuning.}
 
 @inproceedings{bang-etal-2023-multitask,
     title = "A Multitask, Multilingual, Multimodal Evaluation of {C}hat{GPT} on Reasoning, Hallucination, and Interactivity",
@@ -72,6 +93,7 @@
     publisher = "Association for Computational Linguistics",
     paper = "https://aclanthology.org/2023.ijcnlp-main.45.pdf",
     pages = "675--718",
+    selected={true},
     abstract = "This paper proposes a framework for quantitatively evaluating interactive LLMs such as ChatGPT using publicly available data sets, using 23 data sets covering 8 different common NLP application tasks. We extensively evaluate the multitask, multilingual, and multi-modal aspects of ChatGPT based on these data sets and a newly designed multimodal dataset. We find that ChatGPT outperforms LLMs with zeroshot learning on most tasks and even outperforms fine-tuned models on some tasks. We find that it is better at understanding non-Latin script languages than generating them. It is able to generate multimodal content from textual prompts via an intermediate code generation step. Moreover, we find that ChatGPT is 63.41% accurate on average in 10 different reasoning categories under logical reasoning, non-textual reasoning, and commonsense reasoning, hence making it an unreliable reasoner. ChatGPT suffers from hallucination problems like other LLMs. Finally, the interactive feature of ChatGPT enables human collaboration with the underlying LLM to improve its performance, i.e., 8% ROUGE-1 on summarization and 2% ChrF++ on machine translation, in a multi-turn 'prompt engineering' fashion. We release a code for evaluation set extraction.1"
 }
 
@@ -92,6 +114,7 @@
   pages={843--857},
   paper="https://aclanthology.org/2020.aacl-main.85.pdf",
   year={2020},
+  selected={true},
   abstract="Although Indonesian is known to be the fourth most frequently used language over the internet, the research progress on this language in the natural language processing (NLP) is slow-moving due to a lack of available resources. In response, we introduce the first-ever vast resource for the training, evaluating, and benchmarking on Indonesian natural language understanding (IndoNLU) tasks. IndoNLU includes twelve tasks, ranging from single sentence classification to pair-sentences sequence labeling with different levels of complexity. The datasets for the tasks lie in different domains and styles to ensure task diversity. We also provide a set of Indonesian pre-trained models (IndoBERT) trained from a large and clean Indonesian dataset Indo4B collected from publicly available sources such as social media texts, blogs, news, and papers. We release baseline models for all twelve tasks, as well as the framework for benchmark evaluation, and thus it enables everyone to benchmark their system performances."
 }
 
@@ -130,6 +153,7 @@
   booktitle={Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)},
   pages={980--995},
   year={2023},
+  selected={true},
   paper="https://aclanthology.org/2023.ijcnlp-main.63.pdf",
   abstract="Grounding dialogue response generation on external knowledge is proposed to produce informative and engaging responses. However, current knowledge-grounded dialogue (KGD) systems often fail to align the generated responses with human-preferred qualities due to several issues like hallucination and the lack of coherence. Upon analyzing multiple language model generations, we observe the presence of alternative generated responses within a single decoding process. These alternative responses are more faithful and exhibit a comparable or higher level of relevance to prior conversational turns compared to the optimal responses prioritized by the decoding processes. To address these challenges and driven by these observations, we propose Polished \& Informed Candidate Scoring (PICK), a generation re-scoring framework that empowers models to generate faithful and relevant responses without requiring additional labeled data or model tuning. Through comprehensive automatic and human evaluations, we demonstrate the effectiveness of PICK in generating responses that are more faithful while keeping them relevant to the dialogue history. Furthermore, PICK consistently improves the system's performance with both oracle and retrieved knowledge in all decoding strategies. We provide the detailed implementation in https://github.com/bryanwilie/pick ."
 }
@@ -233,6 +257,7 @@
   pages={55--66},
   year={2022},
   paper="https://aclanthology.org/2022.acl-srw.6.pdf",
+  selected={true},
   abstract="Resolving dependencies among dialogue history is one of the main obstacles in the research on conversational question answering (QA). The conversational question rewrites (QR) task has been shown to be effective to solve this problem by reformulating questions in a self-contained form. However, QR datasets are limited and existing methods tend to depend on the assumption of the existence of corresponding QR datasets for every CQA dataset. This paper proposes a reinforcement learning approach that integrates QR and CQA tasks without corresponding labeled QR datasets. We train a QR model based on the reward signal obtained from the CQA, and the experimental results show that our approach can bring improvement over the pipeline approaches."
 }
 

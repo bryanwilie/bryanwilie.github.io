@@ -8,10 +8,13 @@ nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
+
+Full list of my publications can be found in [Google Scholar](https://scholar.google.com/citations?user=0pnaXO8AAAAJ&hl=en).
+
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --group_by none --query @*[selected=true]* --sort_by year,month --order descending %}
 
 </div>
 
-<!-- Full list of my publications can be found in my [Google Scholar page](https://scholar.google.com/citations?user=0pnaXO8AAAAJ&hl=en). -->
+<!-- {% bibliography %} -->

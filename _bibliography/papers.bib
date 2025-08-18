@@ -1,6 +1,20 @@
 ---
 ---
 
+@inproceedings{wilie2025interlingua,
+    title = {High-Dimensional Interlingual Representations of Large Language Models},
+    author = {Wilie, Bryan  and Cahyawijaya, Samuel  and He, Junxian  and Fung, Pascale},
+    booktitle = {Proceedings of the 7th Workshop on Research in Computational Linguistic Typology and Multilingual NLP},
+    month = aug,
+    year = {2025},
+    selected={true},
+    address = {Vienna, Austria},
+    publisher = {Association for Computational Linguistics},
+    paper = {https://aclanthology.org/2025.sigtyp-1.14/},
+    abstract = {Large language models (LLMs) trained on massive multilingual datasets hint at the formation of interlingual constructs{--}a shared region in the representation space. However, evidence regarding this phenomenon is mixed, leaving it unclear whether these models truly develop unified interlingual representations, or present a partially aligned constructs. We explore 31 diverse languages varying on their resource-levels, typologies, and geographical regions; and find that multilingual LLMs exhibit inconsistent cross-lingual alignments. To address this, we propose an interlingual representation framework identifying both the shared interlingual semantic region and fragmented components, existed due to representational limitations. We introduce Interlingual Local Overlap (ILO) score to quantify interlingual alignment by comparing the local neighborhood structures of high-dimensional representations. We utilize ILO to investigate the impact of single-language fine-tuning on the interlingual alignment in multilingual LLMs. Our results indicate that training exclusively on a single language disrupts the alignment in early layers, while freezing these layers preserves the alignment of interlingual representations, leading to improved cross-lingual generalization. These results validate our framework and metric for evaluating interlingual representation, and further underscore that interlingual alignment is crucial for scalable multilingual learning.}
+}
+
+
 @inproceedings{wilie2024belief,
     title = {Belief Revision: The Adaptability of Large Language Models Reasoning},
     author = {Wilie, Bryan and Cahyawijaya, Samuel and Ishii, Etsuko and He, Junxian and Fung, Pascale},
@@ -8,7 +22,9 @@
     month = nov,
     year = {2024},
     selected={true},
-    paper ={https://arxiv.org/pdf/2406.19764},
+    address = {Miami, Florida},
+    publisher = {Association for Computational Linguistics},
+    paper ={https://aclanthology.org/2024.emnlp-main.586/},
     abstract = {The capability to reason from text is crucial for real-world NLP applications. Real-world scenarios often involve incomplete or evolving data. In response, individuals update their beliefs and understandings accordingly. However, most existing evaluations assume that language models (LMs) operate with consistent information. We introduce Belief-R, a new dataset designed to test LMs' belief revision ability when presented with new evidence. Inspired by how humans suppress prior inferences, this task assesses LMs within the newly proposed delta reasoning framework. Belief-R features sequences of premises designed to simulate scenarios where additional information could necessitate prior conclusions drawn by LMs. We evaluate 30 LMs across diverse prompting strategies and found that LMs generally struggle to appropriately revise their beliefs in response to new information. Further, models adept at updating often underperformed in scenarios without necessary updates, highlighting a critical trade-off. These insights underscore the importance of improving LMs' adaptiveness to changing information, a step toward more reliable AI systems.}
 }
 

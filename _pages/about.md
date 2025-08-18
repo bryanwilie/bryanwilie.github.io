@@ -22,21 +22,21 @@ social: true # includes social icons at the bottom of the page
 
 Hi there 👋, thanks for stopping by!
 
-I am a PhD Candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) and I am co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received the bachelor degree in Electrical Engineering from Bandung Institute of Technology in 2014.
+I am a final-year PhD Candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) and I am co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received the bachelor degree in Electrical Engineering from Bandung Institute of Technology.
 
-I am open for machine learning research internship jobs for fall and spring terms.
+I am open for machine learning research scientist jobs. Let's connect!
 
 ## Research
 
-I am generally interested in natural language processing and machine learning, specifically in:
+I am generally interested in natural language processing and machine learning research, specifically in:
 - Reasoning
-- Knowledge-intensive NLP
-- Conversational Al
-- Low-resource languages
+- Multilingualism
+- Retrieval-Augmented Generation
+- Agentic AI
 
 ## Service
 
-<p>Area Chair at ACL, EMNLP, NAACL, ARR<br>Reviewer at ACL, EMNLP, EACL, AACL, ARR</p>
+<p>Area Chair at Neurips, ACL, EMNLP, NAACL, ARR<br>Reviewer at ACL, EMNLP, EACL, AACL, ARR</p>
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

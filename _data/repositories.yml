@@ -2,8 +2,10 @@ github_users:
   - bryanwilie
 
 github_repos:
-  - bryanwilie/pick
+  - HLTCHKUST/interlingua
+  - HLTCHKUST/belief-revision
   - HLTCHKUST/chatgpt-evaluation
-  - IndoNLP/indonlu
-  - IndoNLP/indonlg
+  - bryanwilie/pick
   - IndoNLP/nusa-crowd
+  - IndoNLP/indonlg
+  - IndoNLP/indonlu

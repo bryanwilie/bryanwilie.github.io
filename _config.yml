@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Bryan
-middle_name: 
+middle_name:
 last_name: Wilie
 email: bwilie@connect.ust.hk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -19,8 +19,6 @@ url: https://bryanwilie.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-
-
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -74,7 +72,7 @@ mastodon_username: # your mastodon instance+username in the format instance.tld/
 linkedin_username: bryanwilie # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: 0pnaXO8AAAAJ&hl # your Google Scholar ID
-semanticscholar_id:  # your Semantic Scholar ID
+semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -129,7 +127,7 @@ blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
 # Pagination
-pagination: 
+pagination:
   enabled: true
 
 related_blog_posts:

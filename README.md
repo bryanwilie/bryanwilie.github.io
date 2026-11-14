@@ -6,20 +6,20 @@ It is a [Jekyll](https://jekyllrb.com/) site built on the [al-folio](https://git
 
 ## Where to change what
 
-| I want to change...                                              | Edit this                                                            |
-| ---------------------------------------------------------------- | -------------------------------------------------------------------- |
-| The home page text (bio, "open to roles" box, Service)           | [`_pages/about.md`](_pages/about.md)                                 |
-| The line under my name (e.g. "NLP & ML Researcher · PhD, HKUST") | `subtitle:` at the top of [`_pages/about.md`](_pages/about.md)       |
-| My profile photo                                                 | Add the image to `assets/img/`, then set `profile.image` in `_pages/about.md` |
-| Contact icons (email, Scholar, GitHub, LinkedIn, X)              | [`_config.yml`](_config.yml), the "Social integration" section       |
-| My email address                                                 | `email:` at the top of [`_config.yml`](_config.yml)                  |
-| The page description (shown in search results and link previews) | `description:` at the top of [`_config.yml`](_config.yml)            |
-| Publications                                                     | [`_bibliography/papers.bib`](_bibliography/papers.bib)               |
-| The CV                                                           | `assets/pdf/cv.pdf` (see [Updating my CV](#updating-my-cv))          |
-| Colors (light and dark mode)                                     | [`_sass/_themes.scss`](_sass/_themes.scss)                           |
-| Fonts, spacing, button and section styling                       | [`_sass/_custom.scss`](_sass/_custom.scss)                           |
+| I want to change...                                              | Edit this                                                                                               |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| The home page text (bio, "open to roles" box, Service)           | [`_pages/about.md`](_pages/about.md)                                                                    |
+| The line under my name (e.g. "NLP & ML Researcher · PhD, HKUST") | `subtitle:` at the top of [`_pages/about.md`](_pages/about.md)                                          |
+| My profile photo                                                 | Add the image to `assets/img/`, then set `profile.image` in `_pages/about.md`                           |
+| Contact icons (email, Scholar, GitHub, LinkedIn, X)              | [`_config.yml`](_config.yml), the "Social integration" section                                          |
+| My email address                                                 | `email:` at the top of [`_config.yml`](_config.yml)                                                     |
+| The page description (shown in search results and link previews) | `description:` at the top of [`_config.yml`](_config.yml)                                               |
+| Publications                                                     | [`_bibliography/papers.bib`](_bibliography/papers.bib)                                                  |
+| The CV                                                           | `assets/pdf/cv.pdf` (see [Updating my CV](#updating-my-cv))                                             |
+| Colors (light and dark mode)                                     | [`_sass/_themes.scss`](_sass/_themes.scss)                                                              |
+| Fonts, spacing, button and section styling                       | [`_sass/_custom.scss`](_sass/_custom.scss)                                                              |
 | The CV button's look (square, font)                              | `a.cv-button` in [`_sass/_custom.scss`](_sass/_custom.scss); its font is self-hosted in `assets/fonts/` |
-| Navigation bar tabs                                              | `nav:` / `nav_order:` at the top of each file in `_pages/`           |
+| Navigation bar tabs                                              | `nav:` / `nav_order:` at the top of each file in `_pages/`                                              |
 
 ### Home page (`_pages/about.md`)
 
@@ -54,7 +54,7 @@ The Publications tab is generated from this file and is **always sorted newest f
 - `abbr` is a short venue name. It is currently not displayed, but keep it for reference.
 - Wrap capital letters that must stay capital in braces, e.g. `{J}-{T}o{RL}`.
 - The citation key (`wilie2027example`) must be unique.
-- List **every** author in `author` (separated by `and`, as `Last, First`). All authors are shown on the page, and my own name is automatically shown in *italic + underline*; this is matched by `scholar.first_name` / `scholar.last_name` in [`_config.yml`](_config.yml), so write my name as `Wilie, Bryan`.
+- List **every** author in `author` (separated by `and`, as `Last, First`). All authors are shown on the page, and my own name is automatically shown in _italic + underline_; this is matched by `scholar.first_name` / `scholar.last_name` in [`_config.yml`](_config.yml), so write my name as `Wilie, Bryan`.
 - To collapse long author lists into "N more authors", set `max_author_limit:` in [`_config.yml`](_config.yml) to a number. It is blank now, so nothing is hidden.
 - The "Google Scholar" line under the page title is the `subtitle:` at the top of [`_pages/publications.md`](_pages/publications.md).
 
@@ -72,7 +72,7 @@ The button is **only shown when `assets/pdf/cv.pdf` exists**, so visitors never 
 
 Pushing or merging to `master` triggers the **Deploy site** workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)), which builds the site and publishes it to the `gh-pages` branch. It starts when a change touches the page content, publications, styles, assets or config. Check progress in the repo's **Actions** tab. To redeploy without changing anything, open **Actions → Deploy site → Run workflow**.
 
-GitHub Pages must serve the `gh-pages` branch (Settings → Pages → Source: *Deploy from a branch*, branch `gh-pages`, folder `/ (root)`).
+GitHub Pages must serve the `gh-pages` branch (Settings → Pages → Source: _Deploy from a branch_, branch `gh-pages`, folder `/ (root)`).
 
 ## Previewing changes locally (optional)
 

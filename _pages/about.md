@@ -2,16 +2,16 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate at The Hong Kong University of Science and Technology
+subtitle: NLP & ML Researcher · PhD, HKUST
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
 <!--   more_info: >
-    <p style="font-size:16px;" align="right">Centre for Artificial Intelligence Research (CAiRE)</p>
-    <p style="font-size:16px;" align="right">The Hong Kong University of Science and Technology</p>
-    <p style="font-size:16px;" align="right">Clearwater Bay, Hong Kong</p> -->
+  <p style="font-size:16px;" align="right">Centre for Artificial Intelligence Research (CAiRE)</p>
+  <p style="font-size:16px;" align="right">The Hong Kong University of Science and Technology</p>
+  <p style="font-size:16px;" align="right">Clearwater Bay, Hong Kong</p> -->
 
 news: false # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -19,29 +19,17 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-
 Hi there 👋, thanks for stopping by!
 
-I am a final-year PhD Candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) and I am co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received the bachelor degree in Electrical Engineering from Bandung Institute of Technology.
+I received my PhD from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/), where I was co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received my bachelor's degree in Electrical Engineering from Bandung Institute of Technology.
 
-I am open for machine learning research scientist jobs. Let's connect!
+I am interested in making large language models more reliable reasoners and agents, evaluating their capabilities, and making them more capable across the world's languages and cultures.
 
-## Research
-
-I am generally interested in natural language processing and machine learning research, specifically in:
-- Reasoning
-- Multilingualism
-- Retrieval-Augmented Generation
-- Agentic AI
+<div class="callout" markdown="1">
+I am open to machine learning research scientist roles. Feel free to email me at <a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a>.
+</div>
 
 ## Service
 
-<p>Area Chair at Neurips, ACL, EMNLP, NAACL, ARR<br>Reviewer at ACL, EMNLP, EACL, AACL, ARR</p>
-
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
- -->
+- **Area Chair**: ICLR, NeurIPS, ACL, EMNLP, NAACL, ARR
+- **Reviewer**: ACL, EMNLP, EACL, AACL, ARR

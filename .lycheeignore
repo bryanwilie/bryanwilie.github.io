@@ -1,0 +1,8 @@
+# This server does not send its intermediate certificate. Browsers still open the page,
+# but the link checker fails the TLS check with "unable to get local issuer certificate".
+^https://pascale\.home\.ece\.ust\.hk/
+
+# These HKUST sites are slow to answer from GitHub's runners, so the check times out
+# even though the pages are up.
+^https://hkust\.edu\.hk/
+^https://ece\.hkust\.edu\.hk/

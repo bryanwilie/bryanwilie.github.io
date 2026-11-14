@@ -1,6 +1,71 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"NAACL":
+  url: https://aclanthology.org/venues/naacl/
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"EMNLP":
+  url: https://aclanthology.org/venues/emnlp/
+  color: "#00369f"
+
+"EMNLP Demo":
+  url: https://aclanthology.org/venues/emnlp/
+  color: "#00369f"
+
+"ACL":
+  url: https://aclanthology.org/venues/acl/
+  color: "#00369f"
+
+"ACL Findings":
+  url: https://aclanthology.org/venues/findings/
+  color: "#00369f"
+
+"ACL SRW":
+  url: https://aclanthology.org/venues/acl/
+  color: "#00369f"
+
+"AACL":
+  url: https://aclanthology.org/venues/aacl/
+  color: "#00369f"
+
+"IJCNLP-AACL":
+  url: https://aclanthology.org/venues/ijcnlp/
+  color: "#00369f"
+
+"SIGTYP":
+  url: https://aclanthology.org/venues/sigtyp/
+  color: "#6c757d"
+
+"BlackboxNLP":
+  url: https://aclanthology.org/venues/blackboxnlp/
+  color: "#6c757d"
+
+"NLINT":
+  url: https://aclanthology.org/venues/nlint/
+  color: "#6c757d"
+
+"LOUHI":
+  url: https://aclanthology.org/venues/louhi/
+  color: "#6c757d"
+
+"LaTeCH-CLfL":
+  url: https://aclanthology.org/venues/latechclfl/
+  color: "#6c757d"
+
+"Insights":
+  url: https://aclanthology.org/venues/insights/
+  color: "#6c757d"
+
+"AI4SG":
+  url: https://amulyayadav.github.io/AI4SG2023/
+  color: "#6c757d"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
+
+"NEJLT":
+  url: https://aclanthology.org/venues/nejlt/
+  color: "#6c757d"
+
+"RepL4NLP":
+  url: https://aclanthology.org/venues/repl4nlp/
+  color: "#6c757d"

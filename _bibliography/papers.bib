@@ -1,7 +1,24 @@
 ---
 ---
 
+@inproceedings{wilie2026jtorl,
+    abbr = {IJCNLP-AACL},
+    title = {{J}-{T}o{RL}: Tool-Integrated {LLM}-as-a-Judge via Reinforcement Learning},
+    author = {Wilie, Bryan and Yu, Tiezheng and Dunda, Gerry Windiarto Mohamad and Chen, Jierun and Tao, Chaofan and Xu, Yan and He, Junxian and Fung, Pascale},
+    booktitle = {Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)},
+    month = nov,
+    year = {2026},
+    selected = {true},
+    address = {Hengqin, China},
+    publisher = {Association for Computational Linguistics},
+    pages = {952--965},
+    paper = {https://aclanthology.org/2026.aacl-long.46.pdf},
+    abstract = {LLM-as-a-Judge frameworks offer scalable alternatives to human evaluation but inherit the limitations of text-only reasoning, particularly in tasks requiring precise computations. We introduce J-ToRL, a framework that trains LLM judges to leverage computational tools via code generation through end-to-end reinforcement learning (RL). Unlike prior approaches relying on inference-time integration, J-ToRL internalizes tool-use strategies as part of its policy, enabling exploration of diverse reasoning pathways. We identify a key challenge in applying RL with verifiable rewards to judgment: the coarse reward signals inherent in multiple-choice verdicts can incentivize shortcut learning. J-ToRL mitigates this via an auxiliary verifiable reward mechanism based on reference-answers, that enforces stricter criteria beyond simple verdict accuracy alone. With a sophisticated pairwise comparison dataset across five domains, J-ToRL-trained LLMs improve the base models, outperform prior judges, and close the gap to frontier LLMs. Further, J-ToRL-trained models exhibit beneficial cognitive behaviors such as self-error-recovery and self-refinement of tool use strategies.}
+}
+
 @inproceedings{wilie2025interlingua,
+    abbr = {SIGTYP},
+    code = {https://github.com/HLTCHKUST/interlingua},
     title = {High-Dimensional Interlingual Representations of Large Language Models},
     author = {Wilie, Bryan and Cahyawijaya, Samuel and He, Junxian and Fung, Pascale},
     booktitle = {Proceedings of the 7th Workshop on Research in Computational Linguistic Typology and Multilingual NLP},
@@ -15,7 +32,8 @@
 }
 
 @inproceedings{winata-etal-2025-worldcuisines,
-    title = {WORLDCUISINES: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines},
+    abbr = {NAACL},
+    title = {WorldCuisines: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines},
     author = {Winata, Genta Indra and Hudi, Frederikus and Irawan, Patrick Amadeus and Anugraha, David and Putri, Rifki Afina and Wang, Yutong and Nohejl, Adam and Prathama, Ubaidillah Ariq and Ousidhoum, Nedjma and Amriani, Afifa and Rzayev, Anar and Das, Anirban and Pramodya, Ashmari and Adila, Aulia and Wilie, Bryan and Mawalim, Candy Olivia and Cheng, Ching Lam and Abolade, Daud and Chersoni, Emmanuele and Santus, E. and Ikhwantri, Fariz and Kuwanto, Garry and Zhao, Hanyang and Wibowo, Haryo Akbarianto and Lovenia, Holy and Cruz, Jan Christian Blaise and Putra, Jan Wira Gotama and Myung, Junho and Susanto, Lucky and Machin, Maria Angelica Riera and Zhukova, Marina and Anugraha, Michael and Adilazuarda, Muhammad Farid and Santosa, Natasha and Limkonchotiwat, Peerat and Dabre, Raj and Audino, Rio Alexander and Cahyawijaya, Samuel and Zhang, Shi-Xiong and Salim, Stephanie Yulia and Zhou, Yi and Gui, Yinxuan and Adelani, David Ifeoluwa and Lee, En-Shiun Annie and Okada, Shogo and Purwarianti, Ayu and Aji, Alham Fikri and Watanabe, Taro and Wijaya, Derry Tanti and Oh, Alice and Ngo, Chong-Wah},
     booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
     month = apr,
@@ -26,7 +44,23 @@
     abstract = {Vision Language Models (VLMs) often struggle with culture-specific knowledge, particularly in languages other than English and in underrepresented cultural contexts. To evaluate their understanding of such knowledge, we introduce WorldCuisines, a massive-scale benchmark for multilingual and multicultural, visually grounded language understanding. This benchmark includes a visual question answering (VQA) dataset with text-image pairs across 30 languages and dialects, spanning 9 language families and featuring over 1 million data points, making it the largest multicultural VQA benchmark to date. It includes tasks for identifying dish names and their origins. We provide evaluation datasets in two sizes (12k and 60k instances) alongside a training dataset (1 million instances). Our findings show that while VLMs perform better with correct location context, they struggle with adversarial contexts and predicting specific regional cuisines and languages. To support future research, we release a knowledge base with annotated food entries and images along with the VQA data.}
 }
 
+@inproceedings{cahyawijaya-etal-2025-human,
+    abbr = {NAACL},
+    title = {High-Dimension Human Value Representation in Large Language Models},
+    author = {Cahyawijaya, Samuel and Chen, Delong and Bang, Yejin and Khalatbari, Leila and Wilie, Bryan and Ji, Ziwei and Ishii, Etsuko and Fung, Pascale},
+    booktitle = {Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+    month = apr,
+    year = {2025},
+    address = {Albuquerque, New Mexico},
+    publisher = {Association for Computational Linguistics},
+    pages = {5303--5330},
+    paper = {https://aclanthology.org/2025.naacl-long.274.pdf},
+    abstract = {The widespread application of Large Language Models (LLMs) across various tasks and fields has necessitated the alignment of these models with human values and preferences. Given various approaches of human value alignment, such as Reinforcement Learning with Human Feedback (RLHF), constitutional learning, and safety fine-tuning etc., there is an urgent need to understand the scope and nature of human values injected into these LLMs before their deployment and adoption. We propose UniVar, a high-dimensional neural representation of symbolic human value distributions in LLMs, orthogonal to model architecture and training data. This is a continuous and scalable representation, self-supervised from the value-relevant output of 8 LLMs and evaluated on 15 open-source and commercial LLMs. Through UniVar, we visualize and explore how LLMs prioritize different values in 25 languages and cultures, shedding light on the complex interplay between human values and language modeling.}
+}
+
 @inproceedings{wilie2024belief,
+    abbr = {EMNLP},
+    code = {https://github.com/HLTCHKUST/belief-revision},
     title = {Belief Revision: The Adaptability of Large Language Models Reasoning},
     author = {Wilie, Bryan and Cahyawijaya, Samuel and Ishii, Etsuko and He, Junxian and Fung, Pascale},
     booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
@@ -40,6 +74,7 @@
 }
 
 @inproceedings{ji-etal-2024-llm,
+    abbr = {BlackboxNLP},
     title = {LLM Internal States Reveal Hallucination Risk Faced With a Query},
     author = {Ji, Ziwei and Chen, Delong and Ishii, Etsuko and Cahyawijaya, Samuel and Bang, Yejin and Wilie, Bryan and Fung, Pascale},
     booktitle = {The 7th BlackboxNLP Workshop},
@@ -50,6 +85,7 @@
 }
 
 @inproceedings{cahyawijaya-etal-2024-cendol,
+    abbr = {ACL},
     title = {Cendol: Open Instruction-tuned Generative Large Language Models for {I}ndonesian Languages},
     author = {Cahyawijaya, Samuel and Lovenia, Holy and Koto, Fajri and Putri, Rifki and Cenggoro, Wawan and Lee, Jhonson and Akbar, Salsabil and Dave, Emmanuel and Nuurshadieq, Nuurshadieq and Mahendra, Muhammad and Putri, Rr and Wilie, Bryan and Winata, Genta and Aji, Alham and Purwarianti, Ayu and Fung, Pascale},
     editor = {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
@@ -65,6 +101,8 @@
 }
 
 @inproceedings{bang-etal-2023-multitask,
+    abbr = {IJCNLP-AACL},
+    code = {https://github.com/HLTCHKUST/chatgpt-evaluation},
     title = "A Multitask, Multilingual, Multimodal Evaluation of {C}hat{GPT} on Reasoning, Hallucination, and Interactivity",
     author = "Bang, Yejin  and
       Cahyawijaya, Samuel  and
@@ -98,37 +136,46 @@
 }
 
 @inproceedings{cahyawijaya2023nusacrowd,
+  abbr = {ACL Findings},
+  code = {https://github.com/IndoNLP/nusa-crowd},
   title={NusaCrowd: Open source initiative for Indonesian NLP resources},
-  author={Cahyawijaya, Samuel and Lovenia, Holy and Aji, Alham Fikri and Winata, Genta and Wilie, Bryan and Koto, Fajri and Mahendra, Rahmad and Wibisono, Christian and Romadhony, Ade and Vincentio, Karissa and others},
+  author={Cahyawijaya, Samuel and Lovenia, Holy and Aji, Alham Fikri and Winata, Genta and Wilie, Bryan and Koto, Fajri and Mahendra, Rahmad and Wibisono, Christian and Romadhony, Ade and Vincentio, Karissa and Santoso, Jennifer and Moeljadi, David and Wirawan, Cahya and Hudi, Frederikus and Wicaksono, Muhammad Satrio and Parmonangan, Ivan and Alfina, Ika and Putra, Ilham Firdausi and Rahmadani, Samsul and Oenang, Yulianti and Septiandri, Ali and Jaya, James and Dhole, Kaustubh and Suryani, Arie and Putri, Rifki Afina and Su, Dan and Stevens, Keith and Nityasya, Made Nindyatama and Adilazuarda, Muhammad and Hadiwijaya, Ryan and Diandaru, Ryandito and Yu, Tiezheng and Ghifari, Vito and Dai, Wenliang and Xu, Yan and Damapuspita, Dyah and Wibowo, Haryo and Tho, Cuk and Karo Karo, Ichwanul and Fatyanosa, Tirana and Ji, Ziwei and Neubig, Graham and Baldwin, Timothy and Ruder, Sebastian and Fung, Pascale and Sujaini, Herry and Sakti, Sakriani and Purwarianti, Ayu},
   booktitle={Findings of the Association for Computational Linguistics: ACL 2023},
   pages={13745--13818},
   paper="https://aclanthology.org/2023.findings-acl.868.pdf",
+  month = jul,
   year={2023},
   abstract="We present NusaCrowd, a collaborative initiative to collect and unify existing resources for Indonesian languages, including opening access to previously non-public resources. Through this initiative, we have brought together 137 datasets and 118 standardized data loaders. The quality of the datasets has been assessed manually and automatically, and their value is demonstrated through multiple experiments. NusaCrowd’s data collection enables the creation of the first zero-shot benchmarks for natural language understanding and generation in Indonesian and the local languages of Indonesia. Furthermore, NusaCrowd brings the creation of the first multilingual automatic speech recognition benchmark in Indonesian and the local languages of Indonesia. Our work strives to advance natural language processing (NLP) research for languages that are under-represented despite being widely spoken."
 }
 
 @inproceedings{wilie2020indonlu,
+  abbr = {AACL},
+  code = {https://github.com/IndoNLP/indonlu},
   title={IndoNLU: Benchmark and Resources for Evaluating Indonesian Natural Language Understanding},
-  author={Wilie, Bryan and Vincentio, Karissa and Winata, Genta Indra and Cahyawijaya, Samuel and Li, Xiaohong and Lim, Zhi Yuan and Soleman, Sidik and Mahendra, Rahmad and Fung, Pascale and Bahar, Syafri and others},
+  author={Wilie, Bryan and Vincentio, Karissa and Winata, Genta Indra and Cahyawijaya, Samuel and Li, Xiaohong and Lim, Zhi Yuan and Soleman, Sidik and Mahendra, Rahmad and Fung, Pascale and Bahar, Syafri and Purwarianti, Ayu},
   booktitle={Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},
   pages={843--857},
   paper="https://aclanthology.org/2020.aacl-main.85.pdf",
+  month = dec,
   year={2020},
   selected={true},
   abstract="Although Indonesian is known to be the fourth most frequently used language over the internet, the research progress on this language in the natural language processing (NLP) is slow-moving due to a lack of available resources. In response, we introduce the first-ever vast resource for the training, evaluating, and benchmarking on Indonesian natural language understanding (IndoNLU) tasks. IndoNLU includes twelve tasks, ranging from single sentence classification to pair-sentences sequence labeling with different levels of complexity. The datasets for the tasks lie in different domains and styles to ensure task diversity. We also provide a set of Indonesian pre-trained models (IndoBERT) trained from a large and clean Indonesian dataset Indo4B collected from publicly available sources such as social media texts, blogs, news, and papers. We release baseline models for all twelve tasks, as well as the framework for benchmark evaluation, and thus it enables everyone to benchmark their system performances."
 }
 
 @inproceedings{ishii2023contrastive,
+  abbr = {EMNLP},
   title={Contrastive Learning for Inference in Dialogue},
   author={Ishii, Etsuko and Xu, Yan and Wilie, Bryan and Ji, Ziwei and Lovenia, Holy and Chung, Willy and Fung, Pascale},
   booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
   pages={10202--10221},
   paper="https://aclanthology.org/2023.emnlp-main.631.pdf",
+  month = dec,
   year={2023},
   abstract="Inference, especially those derived from inductive processes, is a crucial component in our conversation to complement the information implicitly or explicitly conveyed by a speaker. While recent large language models show remarkable advances in inference tasks, their performance in inductive reasoning, where not all information is present in the context, is far behind deductive reasoning. In this paper, we analyze the behavior of the models based on the task difficulty defined by the semantic information gap -- which distinguishes inductive and deductive reasoning (Johnson-Laird, 1988, 1993). Our analysis reveals that the disparity in information between dialogue contexts and desired inferences poses a significant challenge to the inductive inference process. To mitigate this information gap, we investigate a contrastive learning approach by feeding negative samples. Our experiments suggest negative samples help models understand what is wrong and improve their inference generations."
 }
 
 @inproceedings{chung-etal-2023-instructtods,
+    abbr = {NLINT},
     title = "{I}nstruct{TODS}: Large Language Models for End-to-End Task-Oriented Dialogue Systems",
     author = "Chung, Willy  and
       Cahyawijaya, Samuel  and
@@ -148,10 +195,13 @@
 }
 
 @inproceedings{wilie2023pick,
+  abbr = {IJCNLP-AACL},
+  code = {https://github.com/bryanwilie/pick},
   title={PICK: Polished \& Informed Candidate Scoring for Knowledge-Grounded Dialogue Systems},
   author={Wilie, Bryan and Xu, Yan and Chung, Willy and Cahyawijaya, Samuel and Lovenia, Holy and Fung, Pascale},
   booktitle={Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)},
   pages={980--995},
+  month = nov,
   year={2023},
   selected={true},
   paper="https://aclanthology.org/2023.ijcnlp-main.63.pdf",
@@ -160,6 +210,8 @@
 
 
 @inproceedings{cahyawijaya-etal-2023-nusawrites,
+    abbr = {IJCNLP-AACL},
+    code = {https://github.com/IndoNLP/nusa-writes},
     title = "{N}usa{W}rites: Constructing High-Quality Corpora for Underrepresented and Extremely Low-Resource Languages",
     author = "Cahyawijaya, Samuel  and
       Lovenia, Holy  and
@@ -198,6 +250,7 @@
 }
 
 @inproceedings{ji-etal-2023-rho,
+    abbr = {ACL Findings},
     title = "{RHO}: Reducing Hallucination in Open-domain Dialogues with Knowledge Grounding",
     author = "Ji, Ziwei  and
       Liu, Zihan  and
@@ -220,52 +273,89 @@
     abstract = "Dialogue systems can leverage large pre-trained language models and knowledge to generate fluent and informative responses. However, these models are still prone to produce hallucinated responses not supported by the input source, which greatly hinders their application. The heterogeneity between external knowledge and dialogue context challenges representation learning and source integration, which further contributes to unfaithfulness. To handle this challenge and generate more faithful responses, this paper presents RHO (ρ) utilizing the representations of linked entities and relation predicates from a knowledge graph (KG). We propose (1) local knowledge grounding to combine textual embeddings with the corresponding KG embeddings; and (2) global knowledge grounding to equip RHO with multi-hop reasoning abilities via the attention mechanism. In addition, we devise a response re-ranking technique based on walks over KG sub-graphs for better conversational reasoning. Experimental results on OpenDialKG (Moon et al., 2019) show that our approach significantly outperforms state-of-the-art methods on both automatic and human evaluation by a large margin, especially in hallucination reduction (17.54{\%} in FeQA (Durmus et al., 2020)).",
 }
 
+@article{dhole2023nlaugmenter,
+    abbr = {NEJLT},
+    title = {{NL}-Augmenter: A Framework for Task-Sensitive Natural Language Augmentation},
+    author = {Dhole, Kaustubh and Gangal, Varun and Gehrmann, Sebastian and Gupta, Aadesh and Li, Zhenhao and Mahamood, Saad and Mahadiran, Abinaya and Mille, Simon and Shrivastava, Ashish and Tan, Samson and Wu, Tongshang and Sohl-Dickstein, Jascha and Choi, Jinho and Hovy, Eduard and Du{\v{s}}ek, Ond{\v{r}}ej and Ruder, Sebastian and Anand, Sajant and Aneja, Nagender and Banjade, Rabin and Barthe, Lisa and Behnke, Hanna and Berlot-Attwell, Ian and Boyle, Connor and Brun, Caroline and Cabezudo, Marco Antonio Sobrevilla and Cahyawijaya, Samuel and Chapuis, Emile and Che, Wanxiang and Choudhary, Mukund and Clauss, Christian and Colombo, Pierre and Cornell, Filip and Dagan, Gautier and Das, Mayukh and Dixit, Tanay and Dopierre, Thomas and Dray, Paul-Alexis and Dubey, Suchitra and Ekeinhor, Tatiana and Giovanni, Marco Di and Goyal, Tanya and Gupta, Rishabh and Hamla, Louanes and Han, Sang and Harel-Canada, Fabrice and Honor{\'e}, Antoine and Jindal, Ishan and Joniak, Przemys{\l}aw and Kleyko, Denis and Kovatchev, Venelin and Krishna, Kalpesh and Kumar, Ashutosh and Langer, Stefan and Lee, Seungjae Ryan and Levinson, Corey James and Liang, Hualou and Liang, Kaizhao and Liu, Zhexiong and Lukyanenko, Andrey and Marivate, Vukosi and de Melo, Gerard and Meoni, Simon and Meyer, Maxine and Mir, Afnan and Moosavi, Nafise Sadat and Meunnighoff, Niklas and Mun, Timothy Sum Hon and Murray, Kenton and Namysl, Marcin and Obedkova, Maria and Oli, Priti and Pasricha, Nivranshu and Pfister, Jan and Plant, Richard and Prabhu, Vinay and Pais, Vasile and Qin, Libo and Raji, Shahab and Rajpoot, Pawan Kumar and Raunak, Vikas and Rinberg, Roy and Roberts, Nicholas and Rodriguez, Juan Diego and Roux, Claude and Samus, Vasconcellos and Sai, Ananya and Schmidt, Robin and Scialom, Thomas and Sefara, Tshephisho and Shamsi, Saqib and Shen, Xudong and Shi, Yiwen and Shi, Haoyue and Shvets, Anna and Siegel, Nick and Sileo, Damien and Simon, Jamie and Singh, Chandan and Sitelew, Roman and Soni, Priyank and Sorensen, Taylor and Soto, William and Srivastava, Aman and Srivatsa, Aditya and Sun, Tony and Varma, Mukund and Tabassum, A and Tan, Fiona and Teehan, Ryan and Tiwari, Mo and Tolkiehn, Marie and Wang, Athena and Wang, Zijian and Wang, Zijie and Wang, Gloria and Wei, Fuxuan and Wilie, Bryan and Winata, Genta Indra and Wu, Xinyu and Wydmanski, Witold and Xie, Tianbao and Yaseen, Usama and Yee, Michael and Zhang, Jing and Zhang, Yue},
+    journal = {Northern European Journal of Language Technology},
+    volume = {9},
+    year = {2023},
+    publisher = {Link{\"o}ping University Electronic Press},
+    paper = {https://aclanthology.org/2023.nejlt-1.5.pdf},
+    code = {https://github.com/GEM-benchmark/NL-Augmenter},
+    abstract = {Data augmentation is an important method for evaluating the robustness of and enhancing the diversity of training data for natural language processing (NLP) models. In this paper, we present NL-Augmenter, a new participatory Python-based natural language (NL) augmentation framework which supports the creation of transformations (modifications to the data) and filters (data splits according to specific features). We describe the framework and an initial set of 117 transformations and 23 filters for a variety of NL tasks annotated with noisy descriptive tags. The transformations incorporate noise, intentional and accidental human mistakes, socio-linguistic variation, semantically-valid style, syntax changes, as well as artificial constructs that are unambiguous to humans. We demonstrate the efficacy of NL-Augmenter by using its transformations to analyze the robustness of popular language models. We find different models to be differently challenged on different tasks, with quasi-systematic score decreases. The infrastructure, datacards, and robustness evaluation results are publicly available on GitHub for the benefit of researchers working on paraphrase generation, robustness analysis, and low-resource NLP.}
+}
+
 @inproceedings{cahyawijaya2022long,
+  abbr = {LOUHI},
   title={How Long Is Enough? Exploring the Optimal Intervals of Long-Range Clinical Note Language Modeling},
   author={Cahyawijaya, Samuel and Wilie, Bryan and Lovenia, Holy and Zhong, Huan and Zhong, MingQian and Ip, Yuk Yu Nancy and Fung, Pascale},
   booktitle={Proceedings of the 13th International Workshop on Health Text Mining and Information Analysis (LOUHI)},
   pages={160--172},
+  month = dec,
   year={2022},
   paper="https://aclanthology.org/2022.louhi-1.19.pdf",
   abstract="Large pre-trained language models (LMs) have been widely adopted in biomedical and clinical domains, introducing many powerful LMs such as bio-lm and BioELECTRA. However, the applicability of these methods to real clinical use cases is hindered, due to the limitation of pre-trained LMs in processing long textual data with thousands of words, which is a common length for a clinical note. In this work, we explore long-range adaptation from such LMs with Longformer, allowing the LMs to capture longer clinical notes context. We conduct experiments on three n2c2 challenges datasets and a longitudinal clinical dataset from Hong Kong Hospital Authority electronic health record (EHR) system to show the effectiveness and generalizability of this concept, achieving ~10% F1-score improvement. Based on our experiments, we conclude that capturing a longer clinical note interval is beneficial to the model performance, but there are different cut-off intervals to achieve the optimal performance for different target variables."
 }
 
 @inproceedings{lovenia2022every,
+  abbr = {LaTeCH-CLfL},
   title={Every picture tells a story: Image-grounded controllable stylistic story generation},
   author={Lovenia, Holy and Wilie, Bryan and Barraud, Romain and Cahyawijaya, Samuel and Chung, Willy and Fung, Pascale},
   booktitle={Proceedings of the 6th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature},
   pages={40--52},
+  month = oct,
   year={2022},
   paper="https://aclanthology.org/2022.latechclfl-1.6.pdf",
   abstract="Generating a short story out of an image is arduous. Unlike image captioning, story generation from an image poses multiple challenges: preserving the story coherence, appropriately assessing the quality of the story, steering the generated story into a certain style, and addressing the scarcity of image-story pair reference datasets limiting supervision during training. In this work, we introduce Plug-and-Play Story Teller (PPST) and improve image-to-story generation by: 1) alleviating the data scarcity problem by incorporating large pre-trained models, namely CLIP and GPT-2, to facilitate a fluent image-to-text generation with minimal supervision, and 2) enabling a more style-relevant generation by incorporating stylistic adapters to control the story generation. We conduct image-to-story generation experiments with non-styled, romance-styled, and action-styled PPST approaches and compare our generated stories with those of previous work over three aspects, i.e., story coherence, image-story relevance, and style fitness, using both automatic and human evaluation. The results show that PPST improves story coherence and has better image-story relevance, but has yet to be adequately stylistic."
 }
 
 
+@inproceedings{lovenia2022clozer,
+  abbr = {RepL4NLP},
+  title={Clozer: Adaptable Data Augmentation for Cloze-style Reading Comprehension},
+  author={Lovenia, Holy and Wilie, Bryan and Chung, Willy and Min, Zeng and Cahyawijaya, Samuel and Su, Dan and Fung, Pascale},
+  booktitle={Proceedings of the 7th Workshop on Representation Learning for NLP},
+  month = may,
+  year={2022},
+  address = {Dublin, Ireland},
+  publisher = {Association for Computational Linguistics},
+  pages={60--66},
+  paper="https://aclanthology.org/2022.repl4nlp-1.7.pdf",
+  abstract="Task-adaptive pre-training (TAPT) alleviates the lack of labelled data and provides performance lift by adapting unlabelled data to downstream task. Unfortunately, existing adaptations mainly involve deterministic rules that cannot generalize well. Here, we propose Clozer, a sequence-tagging based cloze answer extraction method used in TAPT that is extendable for adaptation on any cloze-style machine reading comprehension (MRC) downstream tasks. We experiment on multiple-choice cloze-style MRC tasks, and show that Clozer performs significantly better compared to the oracle and state-of-the-art in escalating TAPT effectiveness in lifting model performance, and prove that Clozer is able to recognize the gold answers independently of any heuristics."
+}
+
 @inproceedings{gehrmann2022gemv2,
+  abbr = {EMNLP Demo},
   title={GEMv2: Multilingual NLG Benchmarking in a Single Line of Code},
-  author={Gehrmann, Sebastian and Bhattacharjee, Abhik and Mahendiran, Abinaya and Wang, Alex and Papangelis, Alexandros and Madaan, Aman and Mcmillan-major, Angelina and Shvets, Anna and Upadhyay, Ashish and Bohnet, Bernd},
+  author={Gehrmann, Sebastian and Bhattacharjee, Abhik and Mahendiran, Abinaya and Wang, Alex and Papangelis, Alexandros and Madaan, Aman and McMillan-Major, Angelina and Shvets, Anna and Upadhyay, Ashish and Bohnet, Bernd and Yao, Bingsheng and Wilie, Bryan and Bhagavatula, Chandra and You, Chaobin and Thomson, Craig and Garbacea, Cristina and Wang, Dakuo and Deutsch, Daniel and Xiong, Deyi and Jin, Di and Gkatzia, Dimitra and Radev, Dragomir and Clark, Elizabeth and Durmus, Esin and Ladhak, Faisal and Ginter, Filip and Winata, Genta Indra and Strobelt, Hendrik and Hayashi, Hiroaki and Novikova, Jekaterina and Kanerva, Jenna and Chim, Jenny and Zhou, Jiawei and Clive, Jordan and Maynez, Joshua and Sedoc, João and Juraska, Juraj and Dhole, Kaustubh and Chandu, Khyathi Raghavi and Beltrachini, Laura Perez and Ribeiro, Leonardo F. R. and Tunstall, Lewis and Zhang, Li and Pushkarna, Mahima and Creutz, Mathias and White, Michael and Kale, Mihir Sanjay and Eddine, Moussa Kamal and Daheim, Nico and Subramani, Nishant and Dusek, Ondrej and Liang, Paul Pu and Ammanamanchi, Pawan Sasanka and Zhu, Qi and Puduppully, Ratish and Kriz, Reno and Shahriyar, Rifat and Cardenas, Ronald and Mahamood, Saad and Osei, Salomey and Cahyawijaya, Samuel and Štajner, Sanja and Montella, Sebastien and Jolly, Shailza and Mille, Simon and Hasan, Tahmid and Shen, Tianhao and Adewumi, Tosin and Raunak, Vikas and Raheja, Vipul and Nikolaev, Vitaly and Tsai, Vivian and Jernite, Yacine and Xu, Ying and Sang, Yisi and Liu, Yixin and Hou, Yufang},
   booktitle={Proceedings of the The 2022 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
   pages={266--281},
+  month = dec,
   year={2022},
   paper="https://aclanthology.org/2022.emnlp-demos.27.pdf",
   abstract="Evaluations in machine learning rarely use the latest metrics, datasets, or human evaluation in favor of remaining compatible with prior work. The compatibility, often facilitated through leaderboards, thus leads to outdated but standardized evaluation practices. We pose that the standardization is taking place in the wrong spot. Evaluation infrastructure should enable researchers to use the latest methods and what should be standardized instead is how to incorporate these new evaluation advances. We introduce GEMv2, the new version of the Generation, Evaluation, and Metrics Benchmark which uses a modular infrastructure for dataset, model, and metric developers to benefit from each other’s work. GEMv2 supports 40 documented datasets in 51 languages, ongoing online evaluation for all datasets, and our interactive tools make it easier to add new datasets to the living benchmark."
 }
 
 @inproceedings{ishii2022integrating,
+  abbr = {ACL SRW},
   title={Integrating Question Rewrites in Conversational Question Answering: A Reinforcement Learning Approach},
   author={Ishii, Etsuko and Wilie, Bryan and Xu, Yan and Cahyawijaya, Samuel and Fung, Pascale},
   booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics: Student Research Workshop},
   pages={55--66},
+  month = may,
   year={2022},
   paper="https://aclanthology.org/2022.acl-srw.6.pdf",
   abstract="Resolving dependencies among dialogue history is one of the main obstacles in the research on conversational question answering (QA). The conversational question rewrites (QR) task has been shown to be effective to solve this problem by reformulating questions in a self-contained form. However, QR datasets are limited and existing methods tend to depend on the assumption of the existence of corresponding QR datasets for every CQA dataset. This paper proposes a reinforcement learning approach that integrates QR and CQA tasks without corresponding labeled QR datasets. We train a QR model based on the reward signal obtained from the CQA, and the experimental results show that our approach can bring improvement over the pipeline approaches."
 }
 
 @inproceedings{ishii2022can,
+  abbr = {Insights},
   title={Can Question Rewriting Help Conversational Question Answering?},
   author={Ishii, Etsuko and Xu, Yan and Cahyawijaya, Samuel and Wilie, Bryan},
   booktitle={Proceedings of the Third Workshop on Insights from Negative Results in NLP},
   pages={94--99},
+  month = may,
   year={2022},
   paper="https://aclanthology.org/2022.insights-1.13.pdf",
   abstract = "Question rewriting (QR) is a subtask of conversational question answering (CQA) aiming to ease the challenges of understanding dependencies among dialogue history by reformulating questions in a self-contained form. Despite seeming plausible, little evidence is available to justify QR as a mitigation method for CQA. To verify the effectiveness of QR in CQA, we investigate a reinforcement learning approach that integrates QR and CQA tasks and does not require corresponding QR datasets for targeted CQA. We find, however, that the RL method is on par with the end-to-end baseline. We provide an analysis of the failure and describe the difficulty of exploiting QR for CQA."
@@ -273,8 +363,9 @@
 
 
 @inproceedings{bang2022towards,
+  abbr = {AI4SG},
   title={Towards Answering Open-ended Ethical Quandary Questions},
-  author={Bang, Yejin and Lee, Nayeon and Yu, Tiezheng and Khalatbari, Leila and Xu, Yan and Cahyawijaya, Samuel and Su, Dan and Wilie, Bryan and Barraud, Romain and Barezi, Elham J and others},
+  author={Bang, Yejin and Lee, Nayeon and Yu, Tiezheng and Khalatbari, Leila and Xu, Yan and Cahyawijaya, Samuel and Su, Dan and Wilie, Bryan and Barraud, Romain and Barezi, Elham J and Madotto, Andrea and Kee, Hayden and Fung, Pascale},
   paper = "https://amulyayadav.github.io/AI4SG2023/images/22.pdf",
   booktitle = "Proceedings of the Workshop on Artificial Intelligence for Social Good",
   year={2022},
@@ -282,18 +373,23 @@
 }
 
 @article{cahyawijaya2021greenformer,
+  abbr = {arXiv},
   title={Greenformer: Factorization toolkit for efficient deep neural networks},
   author={Cahyawijaya, Samuel and Winata, Genta Indra and Lovenia, Holy and Wilie, Bryan and Dai, Wenliang and Ishii, Etsuko and Fung, Pascale},
   paper = "https://arxiv.org/pdf/2109.06762.pdf",
+  month = sep,
   year={2021},
   abstract = "While the recent advances in deep neural networks (DNN) bring remarkable success, the computational cost also increases considerably. In this paper, we introduce Greenformer, a toolkit to accelerate the computation of neural networks through matrix factorization while maintaining performance. Greenformer can be easily applied with a single line of code to any DNN model. Our experimental results show that Greenformer is effective for a wide range of scenarios. We provide the showcase of Greenformer at https://samuelcahyawijaya.github.io/greenformer-demo/."
 }
 
 @inproceedings{cahyawijaya2021indonlg,
+  abbr = {EMNLP},
+  code = {https://github.com/IndoNLP/indonlg},
   title={IndoNLG: Benchmark and Resources for Evaluating Indonesian Natural Language Generation},
-  author={Cahyawijaya, Samuel and Winata, Genta Indra and Wilie, Bryan and Vincentio, Karissa and Li, Xiaohong and Kuncoro, Adhiguna and Ruder, Sebastian and Lim, Zhi Yuan and Bahar, Syafri and Khodra, Masayu and others},
+  author={Cahyawijaya, Samuel and Winata, Genta Indra and Wilie, Bryan and Vincentio, Karissa and Li, Xiaohong and Kuncoro, Adhiguna and Ruder, Sebastian and Lim, Zhi Yuan and Bahar, Syafri and Khodra, Masayu and Purwarianti, Ayu and Fung, Pascale},
   booktitle={Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
   pages={8875--8898},
+  month = nov,
   year={2021},
   paper = "https://aclanthology.org/2021.emnlp-main.699.pdf",
   abstract = "Natural language generation (NLG) benchmarks provide an important avenue to measure progress and develop better NLG systems. Unfortunately, the lack of publicly available NLG benchmarks for low-resource languages poses a challenging barrier for building NLG systems that work well for languages with limited amounts of data. Here we introduce IndoNLG, the first benchmark to measure natural language generation (NLG) progress in three low-resource -- yet widely spoken -- languages of Indonesia: Indonesian, Javanese, and Sundanese. Altogether, these languages are spoken by more than 100 million native speakers, and hence constitute an important use case of NLG systems today. Concretely, IndoNLG covers six tasks: summarization, question answering, chit-chat, and three different pairs of machine translation (MT) tasks. We collate a clean pretraining corpus of Indonesian, Sundanese, and Javanese datasets, Indo4B-Plus, which is used to pretrain our models: IndoBART and IndoGPT. We show that IndoBART and IndoGPT achieve competitive performance on all tasks -- despite using only one-fifth the parameters of a larger multilingual model, mBART-LARGE (Liu et al., 2020). This finding emphasizes the importance of pretraining on closely related, local languages to achieve more efficient learning and faster inference for very low-resource languages like Javanese and Sundanese."

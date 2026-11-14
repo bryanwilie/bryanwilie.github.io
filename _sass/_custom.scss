@@ -1,0 +1,242 @@
+/*******************************************************************************
+ * Modern refinements on top of the stock al-folio look.
+ * Colors and dark-mode palette live in _themes.scss.
+ ******************************************************************************/
+
+// Used only for the CV button. Latin subset, self-hosted (see assets/fonts/Manrope-OFL.txt).
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/manrope-800.woff2") format("woff2");
+}
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01em;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+// Navbar: translucent bar with a soft blur
+.navbar {
+  opacity: 1;
+  background-color: color-mix(in srgb, var(--global-bg-color) 85%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+
+  .navbar-brand {
+    letter-spacing: -0.01em;
+  }
+}
+
+.navbar.navbar-light {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 600;
+  }
+}
+
+// Page header
+.post .post-header {
+  margin-bottom: 1.5rem;
+
+  .post-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+
+  .desc {
+    margin-top: 0.4rem;
+    font-size: 1.1rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Section headings
+.post article h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.post article ul li {
+  margin-bottom: 0.6rem;
+}
+
+// Availability note
+.callout {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.2rem;
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0 10px 10px 0;
+  background-color: var(--global-code-bg-color);
+
+  p {
+    margin: 0;
+  }
+}
+
+// Profile photo
+.profile img {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+// Contact icons: smaller than stock, with a gentle hover lift.
+// Flex keeps the whole row (icons + CV button) centered and vertically aligned.
+.social {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  .contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+    font-size: 2.1rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      line-height: 1;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+
+    // CV: black soft-edged square (same color as the other icons in dark mode).
+    // The square is exactly the icons' line box (1em = 2.1rem) so its top, bottom and
+    // center line up with them. The 1px lift matches where the icon glyphs sit inside
+    // that box, and the top padding centers the capital letters (Manrope's sit high).
+    a.cv-button {
+      width: 2.1rem;
+      height: 2.1rem;
+      padding-top: 0.0625rem;
+      margin-bottom: 0.125rem;
+      border-radius: 0.5rem;
+      background-color: #000;
+      color: #fff;
+      font-family: "Manrope", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+html[data-theme="dark"] .social .contact-icons a.cv-button {
+  background-color: var(--global-text-color);
+  color: var(--global-bg-color);
+
+  &:hover {
+    background-color: var(--global-text-color-light);
+    color: var(--global-bg-color);
+  }
+}
+
+// Publications: compact single chronological list
+.publications {
+  margin-top: 0.5rem;
+
+  ol.bibliography {
+    li {
+      margin-bottom: 0;
+      padding: 0.45rem 0;
+
+      .title {
+        font-weight: 600;
+        line-height: 1.4;
+      }
+
+      .author {
+        line-height: 1.5;
+
+        // My own name: italic + underline
+        > em {
+          font-style: italic;
+          border-bottom: 0;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+
+      .periodical {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--global-text-color-light);
+      }
+
+      .links {
+        margin-top: 0.3rem;
+
+        a.btn {
+          padding: 0.05rem 0.7rem;
+          border-color: color-mix(in srgb, var(--global-text-color-light) 45%, transparent);
+          border-radius: 4px;
+          color: var(--global-text-color-light);
+          font-size: 0.78rem;
+          font-weight: 500;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+          }
+        }
+      }
+
+      div.abstract.hidden {
+        border: 1px solid transparent;
+        border-radius: 8px;
+      }
+
+      div.abstract.hidden.open {
+        border-color: var(--global-divider-color);
+        background-color: var(--global-code-bg-color);
+      }
+    }
+  }
+}
+
+// Footer
+footer.fixed-bottom {
+  border-top: 1px solid var(--global-divider-color);
+}

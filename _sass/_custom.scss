@@ -133,10 +133,15 @@ a {
       }
     }
 
-    // CV: black soft-edged square (same color as the other icons in dark mode)
+    // CV: black soft-edged square (same color as the other icons in dark mode).
+    // The square is exactly the icons' line box (1em = 2.1rem) so its top, bottom and
+    // center line up with them. The 1px lift matches where the icon glyphs sit inside
+    // that box, and the top padding centers the capital letters (Manrope's sit high).
     a.cv-button {
-      width: 2.2rem;
-      height: 2.2rem;
+      width: 2.1rem;
+      height: 2.1rem;
+      padding-top: 0.0625rem;
+      margin-bottom: 0.125rem;
       border-radius: 0.5rem;
       background-color: #000;
       color: #fff;

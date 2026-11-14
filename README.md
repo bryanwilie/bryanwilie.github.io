@@ -94,10 +94,10 @@ See [`INSTALL.md`](INSTALL.md) for details and troubleshooting. Profile images n
 ## Repository layout
 
 ```
-_pages/            Pages: about.md (home), publications.md, repositories.md, 404.md
+_pages/            Pages: about.md (home), publications.md, 404.md
 _bibliography/     papers.bib, the publication list
 _config.yml        Site settings, contact icons, CV path, publication sorting
-_data/             Small data files (venue badge colors, repositories, ...)
+_data/             Small data files (venue badge colors, ...)
 _sass/             Styles: _themes.scss (colors), _custom.scss (my tweaks)
 _layouts/          Page templates (about.liquid renders the bottom icons + CV button)
 assets/img/        Images (profile photo)

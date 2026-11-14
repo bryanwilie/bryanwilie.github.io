@@ -133,17 +133,17 @@ a {
       }
     }
 
-    // CV: black soft-edged square (inverted to white in dark mode)
+    // CV: black soft-edged square (same color as the other icons in dark mode)
     a.cv-button {
-      width: 2.4rem;
-      height: 2.4rem;
-      border-radius: 0.6rem;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 0.65rem;
       background-color: #000;
       color: #fff;
       font-family: "Manrope", "Helvetica Neue", Arial, sans-serif;
-      font-size: 0.95rem;
+      font-size: 1.325rem;
       font-weight: 800;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.03em;
       transition:
         background-color 0.2s ease,
         transform 0.2s ease;
@@ -158,12 +158,12 @@ a {
 }
 
 html[data-theme="dark"] .social .contact-icons a.cv-button {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--global-text-color);
+  color: var(--global-bg-color);
 
   &:hover {
-    background-color: #d9dee5;
-    color: #000;
+    background-color: var(--global-text-color-light);
+    color: var(--global-bg-color);
   }
 }
 

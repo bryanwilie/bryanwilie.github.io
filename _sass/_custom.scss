@@ -1,0 +1,177 @@
+/*******************************************************************************
+ * Modern refinements on top of the stock al-folio look.
+ * Colors and dark-mode palette live in _themes.scss.
+ ******************************************************************************/
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01em;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+// Navbar: translucent bar with a soft blur
+.navbar {
+  opacity: 1;
+  background-color: color-mix(in srgb, var(--global-bg-color) 85%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+
+  .navbar-brand {
+    letter-spacing: -0.01em;
+  }
+}
+
+.navbar.navbar-light {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 600;
+  }
+}
+
+// Page header
+.post .post-header {
+  margin-bottom: 1.5rem;
+
+  .post-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+  }
+
+  .desc {
+    margin-top: 0.4rem;
+    font-size: 1.1rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Section headings
+.post article h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.post article ul li {
+  margin-bottom: 0.6rem;
+}
+
+// Availability note
+.callout {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.2rem;
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0 10px 10px 0;
+  background-color: var(--global-code-bg-color);
+
+  p {
+    margin: 0;
+  }
+}
+
+// Profile photo
+.profile img {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+// Contact icons: smaller than stock, with a gentle hover lift
+.social {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  .contact-icons {
+    font-size: 2.1rem;
+
+    a {
+      display: inline-block;
+      margin: 0 0.4rem;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Publications: single chronological list
+.publications {
+  ol.bibliography {
+    li {
+      margin-bottom: 0;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--global-divider-color);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .title {
+        font-weight: 600;
+        line-height: 1.4;
+      }
+
+      .periodical {
+        font-size: 0.9rem;
+        color: var(--global-text-color-light);
+      }
+
+      .links {
+        margin-top: 0.35rem;
+
+        a.btn {
+          padding: 0.1rem 0.8rem;
+          border-color: color-mix(in srgb, var(--global-text-color-light) 40%, transparent);
+          border-radius: 999px;
+          color: var(--global-text-color-light);
+          font-size: 0.78rem;
+          font-weight: 500;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+          }
+        }
+      }
+
+      div.abstract.hidden {
+        border: 1px solid transparent;
+        border-radius: 10px;
+      }
+
+      div.abstract.hidden.open {
+        border-color: var(--global-divider-color);
+        background-color: var(--global-code-bg-color);
+      }
+    }
+  }
+}
+
+// Footer
+footer.fixed-bottom {
+  border-top: 1px solid var(--global-divider-color);
+}

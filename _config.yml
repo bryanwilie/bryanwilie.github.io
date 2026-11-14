@@ -8,11 +8,10 @@ middle_name:
 last_name: Wilie
 email: bwilie@ust.hk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Bryan Wilie is a final-year PhD candidate at HKUST working on language model reasoning and multilingual NLP. Open to machine learning research scientist roles.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Photos taken from personal collection.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+keywords: Bryan Wilie, natural language processing, large language models, reasoning, multilingual NLP, research scientist, HKUST
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -98,15 +97,11 @@ spotify_id: # your spotify id
 pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: # your instagram id
-facebook_id: bryanwilie # your facebook id
+facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-
-contact_note: >
-  Feel free to tweet me or drop a line via email
-# You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -217,10 +212,12 @@ exclude:
   - Gemfile.lock
   - INSTALL.md
   - LICENSE
+  - lighthouse_results
   - package.json
   - package-lock.json
   - purgecss.config.js
   - README.md
+  - reports
   - vendor
 keep_files:
   - CNAME
@@ -306,8 +303,9 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
-  group_order: descending
+  group_by: none
+  sort_by: year,month
+  order: ascending
 
 # Display different badges withs stats for your publications
 enable_publication_badges:

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate at The Hong Kong University of Science and Technology
+subtitle: NLP & ML Researcher · Final-year PhD Candidate at HKUST
 
 profile:
   align: right
@@ -22,26 +22,20 @@ social: true # includes social icons at the bottom of the page
 
 Hi there 👋, thanks for stopping by!
 
-I am a final-year PhD Candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) and I am co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received the bachelor degree in Electrical Engineering from Bandung Institute of Technology.
+I am a final-year PhD Candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/), co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received my bachelor's degree in Electrical Engineering from Bandung Institute of Technology.
 
-I am open for machine learning research scientist jobs. Let's connect!
+My research aims to make large language models more reliable reasoners and more capable across the world's languages and cultures.
+
+<div class="callout" markdown="1">
+**I am open to machine learning research scientist roles.** If my work fits what your team is building, <a href="mailto:{{ site.email | encode_email }}">email me</a> or reach out on [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}).
+</div>
 
 ## Research
 
-I am generally interested in natural language processing and machine learning research, specifically in:
-- Reasoning
-- Multilingualism
-- Retrieval-Augmented Generation
-- Agentic AI
+- **Reasoning**: reliable reasoning in LLMs. I study how models revise beliefs given new evidence, how their internal states signal hallucination risk, and how to train tool-integrated LLM judges with reinforcement learning.
+- **Multilingualism**: LLMs that work across languages and cultures. I study the interlingual and human-value representations inside LLMs, and build benchmarks, datasets and models for low-resource languages, especially Indonesian.
 
 ## Service
 
-<p>Area Chair at Neurips, ACL, EMNLP, NAACL, ARR<br>Reviewer at ACL, EMNLP, EACL, AACL, ARR</p>
-
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
- -->
+- **Area Chair**: NeurIPS, ACL, EMNLP, NAACL, ARR
+- **Reviewer**: ACL, EMNLP, EACL, AACL, ARR

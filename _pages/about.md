@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: NLP & ML Researcher · Final-year PhD Candidate at HKUST
+subtitle: NLP & ML Researcher · PhD, HKUST
 
 profile:
   align: right
@@ -22,7 +22,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi there 👋, thanks for stopping by!
 
-I am a final-year PhD Candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/), co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received my bachelor's degree in Electrical Engineering from Bandung Institute of Technology.
+I received my PhD from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/), where I was co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received my bachelor's degree in Electrical Engineering from Bandung Institute of Technology.
 
 My research aims to make large language models more reliable reasoners and more capable across the world's languages and cultures.
 
@@ -30,12 +30,7 @@ My research aims to make large language models more reliable reasoners and more 
 **I am open to machine learning research scientist roles.** If my work fits what your team is building, <a href="mailto:{{ site.email | encode_email }}">email me</a> or reach out on [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}).
 </div>
 
-## Research
-
-- **Reasoning**: reliable reasoning in LLMs. I study how models revise beliefs given new evidence, how their internal states signal hallucination risk, and how to train tool-integrated LLM judges with reinforcement learning.
-- **Multilingualism**: LLMs that work across languages and cultures. I study the interlingual and human-value representations inside LLMs, and build benchmarks, datasets and models for low-resource languages, especially Indonesian.
-
 ## Service
 
-- **Area Chair**: NeurIPS, ACL, EMNLP, NAACL, ARR
+- **Area Chair**: ICLR, NeurIPS, ACL, EMNLP, NAACL, ARR
 - **Reviewer**: ACL, EMNLP, EACL, AACL, ARR

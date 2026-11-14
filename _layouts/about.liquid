@@ -67,7 +67,17 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+        <div class="contact-icons">
+          {% include social.liquid %}
+          {% if site.cv_file %}
+            {% assign cv_static = site.static_files | where: 'path', site.cv_file | first %}
+            {% if cv_static %}
+              <a class="cv-button" href="{{ site.cv_file | relative_url }}" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-lines"></i> CV
+              </a>
+            {% endif %}
+          {% endif %}
+        </div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>

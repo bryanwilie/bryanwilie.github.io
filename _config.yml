@@ -8,7 +8,7 @@ middle_name:
 last_name: Wilie
 email: bwilie@ust.hk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Bryan Wilie is a final-year PhD candidate at HKUST working on language model reasoning and multilingual NLP. Open to machine learning research scientist roles.
+  Bryan Wilie is an NLP and machine learning researcher with a PhD from HKUST, working on language model reasoning and multilingual NLP. Open to machine learning research scientist roles.
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: Bryan Wilie, natural language processing, large language models, reasoning, multilingual NLP, research scientist, HKUST
@@ -102,6 +102,10 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
+
+# Path of your CV (PDF). The "CV" button on the home page appears only when this file exists.
+# To update your CV, replace the file at this path (keep the same filename).
+cv_file: /assets/pdf/cv.pdf
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -305,7 +309,7 @@ scholar:
   query: "@*"
   group_by: none
   sort_by: year,month
-  order: ascending
+  order: descending
 
 # Display different badges withs stats for your publications
 enable_publication_badges:

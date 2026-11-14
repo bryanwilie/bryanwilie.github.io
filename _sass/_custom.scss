@@ -114,6 +114,37 @@ a {
         transform: translateY(-2px);
       }
     }
+
+    // CV pill, sits at the right end of the icon row
+    a.cv-button {
+      margin-left: 0.9rem;
+      padding: 0.3rem 1rem;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 999px;
+      color: var(--global-theme-color);
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.6;
+      vertical-align: middle;
+      transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+
+      i::before {
+        color: inherit;
+      }
+
+      &:hover {
+        background-color: var(--global-theme-color);
+        color: var(--global-bg-color);
+        text-decoration: none;
+
+        i::before {
+          color: inherit;
+        }
+      }
+    }
   }
 }
 

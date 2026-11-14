@@ -27,7 +27,7 @@ I received my PhD from [The Hong Kong University of Science and Technology](http
 My research aims to make large language models more reliable reasoners and more capable across the world's languages and cultures.
 
 <div class="callout" markdown="1">
-**I am open to machine learning research scientist roles.** If my work fits what your team is building, <a href="mailto:{{ site.email | encode_email }}">email me</a> or reach out on [LinkedIn](https://www.linkedin.com/in/{{ site.linkedin_username }}).
+I am open to machine learning research scientist roles. Let's get in touch (<a href="mailto:{{ site.email | encode_email }}">email</a>).
 </div>
 
 ## Service

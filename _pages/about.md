@@ -23,7 +23,7 @@ Hi there 👋, thanks for stopping by!
 
 I received my PhD from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) in the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/), where I was co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). Before that, I received my bachelor's degree in Electrical Engineering from Bandung Institute of Technology.
 
-My research aims to make large language models more reliable reasoners and more capable across the world's languages and cultures.
+I am interested in making large language models more reliable reasoners and agents, evaluating their capabilities, and making them more capable across the world's languages and cultures.
 
 <div class="callout" markdown="1">
 I am open to machine learning research scientist roles. Feel free to email me at <a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a>.

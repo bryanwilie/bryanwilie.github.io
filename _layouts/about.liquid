@@ -72,9 +72,7 @@ layout: default
           {% if site.cv_file %}
             {% assign cv_static = site.static_files | where: 'path', site.cv_file | first %}
             {% if cv_static %}
-              <a class="cv-button" href="{{ site.cv_file | relative_url }}" target="_blank" rel="noopener">
-                <i class="fa-solid fa-file-lines"></i> CV
-              </a>
+              <a class="cv-button" href="{{ site.cv_file | relative_url }}" title="CV" target="_blank" rel="noopener">CV</a>
             {% endif %}
           {% endif %}
         </div>

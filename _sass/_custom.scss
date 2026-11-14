@@ -3,15 +3,6 @@
  * Colors and dark-mode palette live in _themes.scss.
  ******************************************************************************/
 
-// Used only for the CV button. Latin subset, self-hosted (see assets/fonts/Manrope-OFL.txt).
-@font-face {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../fonts/manrope-800.woff2") format("woff2");
-}
-
 body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -105,10 +96,8 @@ a {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-$contact-icon-size: 2.1rem;
-
 // Contact icons: smaller than stock, with a gentle hover lift.
-// Flex keeps the whole row (icons + CV button) centered and vertically aligned.
+// Flex keeps the whole row (icons, the CV icon included) centered and vertically aligned.
 .social {
   margin-top: 2.5rem;
   padding-top: 1.75rem;
@@ -120,7 +109,7 @@ $contact-icon-size: 2.1rem;
     align-items: center;
     justify-content: center;
     gap: 0.75rem 1.5rem;
-    font-size: $contact-icon-size;
+    font-size: 2.1rem;
 
     a {
       display: inline-flex;
@@ -134,43 +123,6 @@ $contact-icon-size: 2.1rem;
         transform: translateY(-2px);
       }
     }
-
-    // CV: black soft-edged square (same color as the other icons in dark mode)
-    // Sized from the LinkedIn icon (a 0.875em square whose "in" is 0.625em tall,
-    // leaving 0.125em of padding on every side) so the letters and padding match it.
-    // The padding is trimmed slightly for the glyph's side bearings and baseline
-    // offset, so the visible gap is equal on all four sides.
-    a.cv-button {
-      box-sizing: border-box;
-      height: $contact-icon-size * 0.875;
-      padding: 0 0.25rem 0.0875rem 0.206rem;
-      border-radius: 0.5rem;
-      background-color: #000;
-      color: #fff;
-      font-family: "Manrope", "Helvetica Neue", Arial, sans-serif;
-      font-size: $contact-icon-size * 0.87;
-      font-weight: 800;
-      letter-spacing: 0;
-      transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
-
-      &:hover {
-        background-color: #333;
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-html[data-theme="dark"] .social .contact-icons a.cv-button {
-  background-color: var(--global-text-color);
-  color: var(--global-bg-color);
-
-  &:hover {
-    background-color: var(--global-text-color-light);
-    color: var(--global-bg-color);
   }
 }
 

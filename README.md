@@ -25,7 +25,7 @@ It is a [Jekyll](https://jekyllrb.com/) site built on the [al-folio](https://git
 
 - The part between the two `---` lines at the top is the page settings (subtitle, photo, which sections to show). Leave `social: true` so the contact icons and CV button stay at the bottom.
 - Below it is plain Markdown. Edit the bio, the "open to roles" box (`<div class="callout">`), and the **Service** list (Area Chair / Reviewer) the same way you would edit any text.
-- `{{ site.email | encode_email }}` in the callout is filled from `email:` in `_config.yml`; keep it as is.
+- `{{ site.email | encode_email }}` in the callout is filled from `email:` in `_config.yml` (it also drives the email icon); keep it as is.
 
 ### Contact icons (`_config.yml`)
 

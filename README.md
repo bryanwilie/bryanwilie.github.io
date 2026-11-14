@@ -18,11 +18,12 @@ It is a [Jekyll](https://jekyllrb.com/) site built on the [al-folio](https://git
 | The CV                                                           | `assets/pdf/cv.pdf` (see [Updating my CV](#updating-my-cv))          |
 | Colors (light and dark mode)                                     | [`_sass/_themes.scss`](_sass/_themes.scss)                           |
 | Fonts, spacing, button and section styling                       | [`_sass/_custom.scss`](_sass/_custom.scss)                           |
+| The CV button's look (square, font)                              | `a.cv-button` in [`_sass/_custom.scss`](_sass/_custom.scss); its font is self-hosted in `assets/fonts/` |
 | Navigation bar tabs                                              | `nav:` / `nav_order:` at the top of each file in `_pages/`           |
 
 ### Home page (`_pages/about.md`)
 
-- The part between the two `---` lines at the top is the page settings (subtitle, photo, which sections to show). Leave `social: true` so the contact icons and CV icon stay at the bottom.
+- The part between the two `---` lines at the top is the page settings (subtitle, photo, which sections to show). Leave `social: true` so the contact icons and CV button stay at the bottom.
 - Below it is plain Markdown. Edit the bio, the "open to roles" box (`<div class="callout">`), and the **Service** list (Area Chair / Reviewer) the same way you would edit any text.
 - `{{ site.email | encode_email }}` in the callout is filled from `email:` in `_config.yml` (it also drives the email icon); keep it as is.
 
@@ -59,7 +60,7 @@ The Publications tab is generated from this file and is **always sorted newest f
 
 ### Updating my CV
 
-The **CV** icon at the bottom of the home page (to the right of the other contact icons, same look as the LinkedIn icon; it is Academicons' `ai-cv-square`) opens `assets/pdf/cv.pdf`.
+The **CV** button at the bottom of the home page (to the right of the contact icons) opens `assets/pdf/cv.pdf`.
 
 1. Name your file exactly `cv.pdf`.
 2. On GitHub, open the [`assets/pdf`](assets/pdf) folder, click **Add file → Upload files**, drag `cv.pdf` in, and commit to `master`. To update later, upload a new `cv.pdf` the same way; it replaces the old one.
@@ -98,7 +99,7 @@ _bibliography/     papers.bib, the publication list
 _config.yml        Site settings, contact icons, CV path, publication sorting
 _data/             Small data files (venue badge colors, ...)
 _sass/             Styles: _themes.scss (colors), _custom.scss (my tweaks)
-_layouts/          Page templates (about.liquid renders the bottom icons + CV icon)
+_layouts/          Page templates (about.liquid renders the bottom icons + CV button)
 assets/img/        Images (profile photo)
 assets/pdf/        The CV (cv.pdf)
 ```

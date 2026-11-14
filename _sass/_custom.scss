@@ -3,6 +3,15 @@
  * Colors and dark-mode palette live in _themes.scss.
  ******************************************************************************/
 
+// Used only for the CV button. Latin subset, self-hosted (see assets/fonts/Manrope-OFL.txt).
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/manrope-800.woff2") format("woff2");
+}
+
 body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +106,7 @@ a {
 }
 
 // Contact icons: smaller than stock, with a gentle hover lift.
-// Flex keeps the whole row (icons, the CV icon included) centered and vertically aligned.
+// Flex keeps the whole row (icons + CV button) centered and vertically aligned.
 .social {
   margin-top: 2.5rem;
   padding-top: 1.75rem;
@@ -123,6 +132,38 @@ a {
         transform: translateY(-2px);
       }
     }
+
+    // CV: black soft-edged square (same color as the other icons in dark mode)
+    a.cv-button {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 0.5rem;
+      background-color: #000;
+      color: #fff;
+      font-family: "Manrope", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+html[data-theme="dark"] .social .contact-icons a.cv-button {
+  background-color: var(--global-text-color);
+  color: var(--global-bg-color);
+
+  &:hover {
+    background-color: var(--global-text-color-light);
+    color: var(--global-bg-color);
   }
 }
 

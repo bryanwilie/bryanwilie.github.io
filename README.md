@@ -18,6 +18,7 @@ It is a [Jekyll](https://jekyllrb.com/) site built on the [al-folio](https://git
 | The CV                                                           | `assets/pdf/cv.pdf` (see [Updating my CV](#updating-my-cv))          |
 | Colors (light and dark mode)                                     | [`_sass/_themes.scss`](_sass/_themes.scss)                           |
 | Fonts, spacing, button and section styling                       | [`_sass/_custom.scss`](_sass/_custom.scss)                           |
+| The CV button's look (square, font)                              | `a.cv-button` in [`_sass/_custom.scss`](_sass/_custom.scss); its font is self-hosted in `assets/fonts/` |
 | Navigation bar tabs                                              | `nav:` / `nav_order:` at the top of each file in `_pages/`           |
 
 ### Home page (`_pages/about.md`)
@@ -53,7 +54,9 @@ The Publications tab is generated from this file and is **always sorted newest f
 - `abbr` is a short venue name. It is currently not displayed, but keep it for reference.
 - Wrap capital letters that must stay capital in braces, e.g. `{J}-{T}o{RL}`.
 - The citation key (`wilie2027example`) must be unique.
-- The "Google Scholar" link at the top of the Publications page is in [`_pages/publications.md`](_pages/publications.md).
+- List **every** author in `author` (separated by `and`, as `Last, First`). All authors are shown on the page, and my own name is automatically shown in *italic + underline*; this is matched by `scholar.first_name` / `scholar.last_name` in [`_config.yml`](_config.yml), so write my name as `Wilie, Bryan`.
+- To collapse long author lists into "N more authors", set `max_author_limit:` in [`_config.yml`](_config.yml) to a number. It is blank now, so nothing is hidden.
+- The "Google Scholar" line under the page title is the `subtitle:` at the top of [`_pages/publications.md`](_pages/publications.md).
 
 ### Updating my CV
 

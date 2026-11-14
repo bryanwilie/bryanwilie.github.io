@@ -3,6 +3,15 @@
  * Colors and dark-mode palette live in _themes.scss.
  ******************************************************************************/
 
+// Used only for the CV button. Latin subset, self-hosted (see assets/fonts/Manrope-OFL.txt).
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/manrope-800.woff2") format("woff2");
+}
+
 body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -131,9 +140,10 @@ a {
       border-radius: 0.6rem;
       background-color: #000;
       color: #fff;
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
+      font-family: "Manrope", "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
       transition:
         background-color 0.2s ease,
         transform 0.2s ease;
@@ -157,35 +167,45 @@ html[data-theme="dark"] .social .contact-icons a.cv-button {
   }
 }
 
-// Publications: single chronological list
+// Publications: compact single chronological list
 .publications {
+  margin-top: 0.5rem;
+
   ol.bibliography {
     li {
       margin-bottom: 0;
-      padding: 1.1rem 0;
-      border-bottom: 1px solid var(--global-divider-color);
-
-      &:last-child {
-        border-bottom: 0;
-      }
+      padding: 0.45rem 0;
 
       .title {
         font-weight: 600;
         line-height: 1.4;
       }
 
+      .author {
+        line-height: 1.5;
+
+        // My own name: italic + underline
+        > em {
+          font-style: italic;
+          border-bottom: 0;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+
       .periodical {
         font-size: 0.9rem;
+        line-height: 1.5;
         color: var(--global-text-color-light);
       }
 
       .links {
-        margin-top: 0.35rem;
+        margin-top: 0.3rem;
 
         a.btn {
-          padding: 0.1rem 0.8rem;
-          border-color: color-mix(in srgb, var(--global-text-color-light) 40%, transparent);
-          border-radius: 999px;
+          padding: 0.05rem 0.7rem;
+          border-color: color-mix(in srgb, var(--global-text-color-light) 45%, transparent);
+          border-radius: 4px;
           color: var(--global-text-color-light);
           font-size: 0.78rem;
           font-weight: 500;
@@ -200,7 +220,7 @@ html[data-theme="dark"] .social .contact-icons a.cv-button {
 
       div.abstract.hidden {
         border: 1px solid transparent;
-        border-radius: 10px;
+        border-radius: 8px;
       }
 
       div.abstract.hidden.open {

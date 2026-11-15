@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a PhD candidate at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/), where I was co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) and [Junxian He](https://jxhe.github.io/). I obtained my bachelor's degree in Electrical Engineering from Bandung Institute of Technology.
+I obtained my PhD from [The Hong Kong University of Science and Technology](https://hkust.edu.hk/), where I was co-advised by [Pascale Fung](https://pascale.home.ece.ust.hk/about.html) at the [Centre for Artificial Intelligence Research](https://caire.hkust.edu.hk/) lab and [Junxian He](https://jxhe.github.io/). I received my bachelor's degree in Electrical Engineering from Bandung Institute of Technology.
 
 I am interested in making large language models more reliable reasoners and agents, evaluating their capabilities, and making them more capable across the world's languages and cultures.
 
